@@ -3405,7 +3405,6 @@ namespace Yanan.Standalone
             StartPosition = FormStartPosition.Manual;
             TopMost = true;
             AutoScaleMode = AutoScaleMode.None;
-            MaximumSize = new Size(FrameResource.SourceWidth, FrameResource.SourceHeight);
             ControlBox = false;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -3650,6 +3649,13 @@ namespace Yanan.Standalone
         protected override void WndProc(ref Message message)
         {
             base.WndProc(ref message);
+            if (message.Msg == 0x0024)
+            {
+                NativeMinMaxInfo limits = (NativeMinMaxInfo)Marshal.PtrToStructure(message.LParam, typeof(NativeMinMaxInfo));
+                limits.MaximumTrackSize.X = Math.Max(limits.MaximumTrackSize.X, FrameResource.SourceWidth);
+                limits.MaximumTrackSize.Y = Math.Max(limits.MaximumTrackSize.Y, FrameResource.SourceHeight);
+                Marshal.StructureToPtr(limits, message.LParam, false);
+            }
             if ((message.Msg == 0x02E0 || message.Msg == 0x007E) && _frameCache != null && IsHandleCreated)
             {
                 // Keep the user-selected scale and recover the window after DPI/display changes.
@@ -5806,6 +5812,16 @@ namespace Yanan.Standalone
                 }
             }
         }
+    }
+
+    [StructLayout(LayoutKind.Sequential)]
+    internal struct NativeMinMaxInfo
+    {
+        public NativePoint Reserved;
+        public NativePoint MaximumSize;
+        public NativePoint MaximumPosition;
+        public NativePoint MinimumTrackSize;
+        public NativePoint MaximumTrackSize;
     }
 
     [StructLayout(LayoutKind.Sequential)]
