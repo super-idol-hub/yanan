@@ -111,7 +111,10 @@ namespace Yanan.Standalone
 
             foreach (float scale in new[] {1.25f, 2.25f, 4f})
             {
+                int footBeforeScale = Bottom;
                 ApplyScale(scale, true);
+                Require(Size == ClientSize, "native window must match the rendered canvas");
+                Require(Bottom == footBeforeScale, "scaling preserves the foot anchor");
                 Require(ClientSize.Width == (int)Math.Round(FrameResource.LogicalWidth * scale), "scale width");
                 Require(ClientSize.Height == (int)Math.Round(FrameResource.LogicalHeight * scale),
                     "scale height: scale=" + scale + ", actual=" + ClientSize.Height + ", expected=" + Math.Round(FrameResource.LogicalHeight * scale));

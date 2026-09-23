@@ -5113,7 +5113,7 @@ namespace Yanan.Standalone
                 Math.Max(1, (int)Math.Round(FrameResource.LogicalHeight * _scale)));
             ClientSize = desiredSize;
             QaTraceScale("after managed size");
-            if (IsHandleCreated && ClientSize != desiredSize)
+            if (IsHandleCreated && (ClientSize != desiredSize || Size != desiredSize))
             {
                 // Form.SetBoundsCore caps dimensions at MaxWindowTrackSize, even
                 // for a borderless programmatically sized layered window.
@@ -5189,7 +5189,7 @@ namespace Yanan.Standalone
         {
             Rectangle area = Screen.FromRectangle(Bounds).WorkingArea;
             int x = Math.Max(area.Left, Math.Min(Left, area.Right - Width));
-            int y = Height > area.Height ? area.Bottom - Height
+            int y = Height > area.Height ? Math.Max(area.Top + 32 - Height, Math.Min(Top, area.Bottom - Height))
                 : Math.Max(area.Top, Math.Min(Top, area.Bottom - Height));
             Location = new Point(x, y);
         }
