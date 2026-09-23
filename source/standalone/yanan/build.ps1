@@ -19,7 +19,7 @@ if (-not $SourceOnly) {
     $arguments += "/resource:$archive,Yanan.Standalone.Frames.zip"
 }
 if (Test-Path -LiteralPath "$PSScriptRoot\yanan.ico") { $arguments += "/win32icon:$PSScriptRoot\yanan.ico" }
-$arguments += "$PSScriptRoot\Program.cs", "$PSScriptRoot\ContractTests.cs"
+$arguments += "$PSScriptRoot\Program.cs", "$PSScriptRoot\ContractTests.cs", "$PSScriptRoot\InteractionQa.cs"
 & $compiler $arguments
 if ($LASTEXITCODE -ne 0) { throw "Compilation failed: $LASTEXITCODE" }
 Get-Item -LiteralPath $output | Select-Object Name, Length

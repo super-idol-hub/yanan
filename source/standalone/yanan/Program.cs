@@ -142,6 +142,12 @@ namespace Yanan.Standalone
             try
             {
                 WriteLog(exception);
+                string qaDirectory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
+                if (!string.IsNullOrEmpty(qaDirectory))
+                {
+                    Directory.CreateDirectory(qaDirectory);
+                    File.WriteAllText(Path.Combine(qaDirectory, "error.txt"), exception.ToString(), Encoding.UTF8);
+                }
             }
             catch
             {
@@ -351,6 +357,7 @@ namespace Yanan.Standalone
                 }
 
                 HashSet<string> found = new HashSet<string>(StringComparer.Ordinal);
+                HashSet<string> allEntries = new HashSet<string>(StringComparer.Ordinal);
                 long totalUncompressedBytes = 0;
                 using (MemoryStream stream = new MemoryStream(archiveBytes, false))
                 using (ZipArchive archive = new ZipArchive(stream, ZipArchiveMode.Read, false))
@@ -375,7 +382,7 @@ namespace Yanan.Standalone
                         bool isFrame = expected.Contains(name);
                         bool isMotion = name.StartsWith("motion/", StringComparison.Ordinal)
                             && name.EndsWith(".mtn", StringComparison.Ordinal);
-                        if ((!isFrame && !isMotion) || (isFrame && !found.Add(name)))
+                        if ((!isFrame && !isMotion) || !allEntries.Add(name) || (isFrame && !found.Add(name)))
                         {
                             error = "unexpected or duplicate archive entry";
                             return false;
@@ -401,15 +408,14 @@ namespace Yanan.Standalone
                             }
                             using (Stream motionStream = entry.Open())
                             {
-                                byte[] header = new byte[4];
-                                if (motionStream.Read(header, 0, header.Length) != header.Length
-                                    || header[0] != (byte)'X'
-                                    || header[1] != (byte)'W'
-                                    || header[2] != (byte)'M'
-                                    || header[3] != (byte)'1')
+                                using (MemoryStream motionCopy = new MemoryStream())
                                 {
-                                    error = "motion entry header is invalid";
-                                    return false;
+                                    motionStream.CopyTo(motionCopy);
+                                    if (MotionField.Parse(motionCopy.ToArray(), false) == null)
+                                    {
+                                        error = "motion entry data is invalid";
+                                        return false;
+                                    }
                                 }
                             }
                         }
@@ -418,9 +424,10 @@ namespace Yanan.Standalone
                             using (Stream frameStream = entry.Open())
                             using (Bitmap frame = new Bitmap(frameStream))
                             {
-                                if (frame.Width != SourceWidth || frame.Height != SourceHeight)
+                                if (frame.Width != SourceWidth || frame.Height != SourceHeight
+                                    || !Image.IsAlphaPixelFormat(frame.PixelFormat))
                                 {
-                                    error = "frame dimensions do not match 528x808";
+                                    error = "frame must be 528x808 with alpha";
                                     return false;
                                 }
                             }
@@ -3239,7 +3246,7 @@ namespace Yanan.Standalone
         Held
     }
 
-    internal sealed class CharacterForm : Form
+    internal sealed partial class CharacterForm : Form
     {
         private const int WsExLayered = 0x00080000;
         private const int WsExToolWindow = 0x00000080;
@@ -3462,6 +3469,7 @@ namespace Yanan.Standalone
                 // same executable. No adjacent skins directory is consulted.
                 BeginInvoke((MethodInvoker)delegate
                 {
+                    RunInteractionQa();
                     SkinPack qaTarget = null;
                     foreach (SkinPack pack in _skinCatalog.Packs)
                     {
@@ -3514,7 +3522,7 @@ namespace Yanan.Standalone
             // A sleeping click is consumed by the wake-up sequence.  In
             // particular it must not also become a drag or the first half of
             // the normal double-click wave gesture.
-            if (_state == CharacterState.SideRest && (_sideRestSleeping || _sideRestWaking))
+            if (_state == CharacterState.SideRest)
             {
                 _pendingDoubleClickWave = false;
                 if (_sideRestSleeping)
@@ -3527,7 +3535,7 @@ namespace Yanan.Standalone
             // Sitting becomes a persistent phone break once frame 3 is
             // reached.  A click requests the authored put-away/stand-up exit
             // and is never reinterpreted as a drag or double-click.
-            if (_state == CharacterState.Sitting && (_sittingPhoneHolding || _sittingPhoneExiting))
+            if (_state == CharacterState.Sitting)
             {
                 _pendingDoubleClickWave = false;
                 if (_sittingPhoneHolding)
@@ -3636,6 +3644,17 @@ namespace Yanan.Standalone
             base.OnMouseWheel(eventArgs);
             float nextScale = _scale + (eventArgs.Delta > 0 ? 0.25f : -0.25f);
             SetScaleFromMenu(nextScale);
+        }
+
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+            if ((message.Msg == 0x02E0 || message.Msg == 0x007E) && _frameCache != null && IsHandleCreated)
+            {
+                // Keep the user-selected scale and recover the window after DPI/display changes.
+                ClampToWorkingArea();
+                RenderCurrentFrame();
+            }
         }
 
         protected override void OnKeyDown(KeyEventArgs eventArgs)
@@ -4607,7 +4626,7 @@ namespace Yanan.Standalone
 
         private void StartExclusiveSwing()
         {
-            if (_skinTransitionActive || !IsExclusiveSwingEnabled())
+            if (_skinTransitionActive || IsPersistentActionActive() || !IsExclusiveSwingEnabled())
             {
                 return;
             }
@@ -4944,7 +4963,7 @@ namespace Yanan.Standalone
 
         private void StartAction(CharacterState state, int loops)
         {
-            if (_skinTransitionActive)
+            if (_skinTransitionActive || IsPersistentActionActive())
             {
                 return;
             }
@@ -4961,6 +4980,12 @@ namespace Yanan.Standalone
             _remainingActionFrames = FrameCounts[(int)state] * Math.Max(1, loops);
             ScheduleCurrentTweenTick();
             RenderCurrentFrame();
+        }
+
+        private bool IsPersistentActionActive()
+        {
+            return _state == CharacterState.Sitting || _state == CharacterState.SideRest
+                || (_state == CharacterState.SkinExclusive && _exclusiveSwingActive);
         }
 
         private void StartActionAtFrame(CharacterState state, int firstFrame, int actionFrameCount)
@@ -5118,7 +5143,7 @@ namespace Yanan.Standalone
             _longKeyFrameHoldConsumed = false;
             _temporaryAction = false;
             _remainingActionFrames = -1;
-            Rectangle area = Screen.FromPoint(Cursor.Position).WorkingArea;
+            Rectangle area = Screen.PrimaryScreen.WorkingArea;
             Location = new Point(area.Right - Width - 28, area.Bottom - Height - 18);
             ClampToWorkingArea();
             ScheduleNextIdleAction(false);

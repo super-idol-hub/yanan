@@ -311,7 +311,7 @@ def main() -> int:
         "manifest": manifest,
         "minimumMidpointOpaqueCorePixels": minimum_core,
         "minimumMidpointLargestComponentCoverage": minimum_component_coverage,
-        "qaContact": str(qa_contact),
+        "qaContact": qa_contact.name,
         "records": records,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)

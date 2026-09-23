@@ -5,6 +5,7 @@ bin/
 obj/
 __pycache__/
 release-assets/
+source/standalone/yanan/resources/noir/
 *.pyc
 *.exe
 *.dll
