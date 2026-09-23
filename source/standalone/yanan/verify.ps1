@@ -16,7 +16,11 @@ function Invoke-Check([string[]]$Arguments) {
     $quoted = @($Arguments | ForEach-Object { '"' + $_ + '"' })
     $process = Start-Process -FilePath $exe -ArgumentList $quoted -WindowStyle Hidden -PassThru
     if (-not $process.WaitForExit(120000)) { $process.Kill(); throw 'QA timed out after 120 seconds' }
-    if ($process.ExitCode -ne 0) { throw "QA failed with exit code $($process.ExitCode): $($Arguments -join ' ')" }
+    if ($process.ExitCode -ne 0) {
+        $errorFile = Join-Path $qa 'error.txt'
+        if (Test-Path -LiteralPath $errorFile) { Get-Content -LiteralPath $errorFile | Write-Host }
+        throw "QA failed with exit code $($process.ExitCode): $($Arguments -join ' ')"
+    }
 }
 Invoke-Check @('--contract-test', (Join-Path $qa 'contract-tests.json'))
 if ($ContractsOnly) { return }

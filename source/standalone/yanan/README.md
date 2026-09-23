@@ -6,7 +6,7 @@
 
 ```powershell
 .\build.ps1 -SourceOnly
-# 准备完整正式帧归档后：
+# 仓库已包含完整角色资源：
 .\build.ps1 -FrameArchive .\resources\noir-frames.zip
 ```
 
@@ -21,3 +21,5 @@
 资源归档：`frames/r00/c00.png` 至规范最后一帧，24 行共 176 张 528×808 RGBA PNG；`motion/` 下为 17×25 的 `XWM1` 双向位移网格。逻辑画布为 132×202。显示阶段使用单主体网格变形，不能把两幅完整人物直接交叉淡入淡出。
 
 生成和转换工具仅在构建时使用 Python、Pillow、NumPy、OpenCV。`build_motion_fields.py` 从已审核关键帧计算网格，不生成新人物图。原始参考照片不参与运行时构建。
+
+`resources/noir-frames.zip` 已包含全部 PNG 和网格，直接编译不需要 Python。资源报告与逐行动作预览位于仓库 `qa/evidence/`。自动验证命令为 `./verify.ps1 -WindowQa`；它把 EXE 单独复制到隔离目录后执行，不依赖工作区图片。

@@ -15,3 +15,5 @@
 工程基于组织已有 Windows 角色实现进行适配：[上游源码](https://github.com/super-idol-hub/xiaoluhan/tree/cefbda0496af2d9fe05dea8c424b8ecde337db40/source/standalone/xiaoluhan)。仅复用运行时和动作网格算法，不复用上游人物图片、图标或发布包；同一组织维护者授权创建本项目。上游未附独立代码许可证，不能据此推断任意第三方再许可。
 
 规范基线：[3c58458](https://github.com/super-idol-hub/idol-windows-character-guides/tree/3c58458b7ee0713ccebbe0ef92d0ce7b99db3164)。构建时使用 Python、Pillow（HPND）、NumPy（BSD）、OpenCV（Apache-2.0）；运行时仅使用 Windows/.NET Framework，不捆绑这些构建工具。
+
+YA 应用图标由本项目用几何线条绘制，不使用第三方图标或字体；生成脚本随源码提供。

@@ -2918,7 +2918,7 @@ namespace Yanan.Standalone
             builder.AppendLine("  \"wholeFrameCrossFade\": false,");
             builder.AppendLine("  \"motionFieldLoaded\": " + (motionFieldLoaded ? "true" : "false") + ",");
             builder.AppendLine("  \"ghostFreeSinglePoseOwner\": " + (ghostFreeSingleOwner ? "true" : "false") + ",");
-            builder.AppendLine("  \"motionInterpolationPreview\": \"" + EscapeJson(Path.GetFullPath(motionPreviewPath)) + "\",");
+            builder.AppendLine("  \"motionInterpolationPreview\": \"" + EscapeJson(Path.GetFileName(motionPreviewPath)) + "\",");
             builder.AppendLine("  \"minimumDisplayStagesPerCycle\": " + AnimationSmoothing.MinimumStagesPerCycle + ",");
             builder.AppendLine("  \"timingReferenceStagesPerCycle\": " + AnimationSmoothing.TimingReferenceStagesPerCycle + ",");
             builder.AppendLine("  \"minimumVerifiedDisplayStagesPerCycle\": " + minimumVerifiedStages + ",");
@@ -2964,7 +2964,7 @@ namespace Yanan.Standalone
             builder.AppendLine("  \"skinTransitionPauseSafe\": true,");
             builder.AppendLine("  \"skinTransitionScaleSafe\": true,");
             builder.AppendLine("  \"skinTransitionCloseDisposesResources\": true,");
-            builder.AppendLine("  \"skinTransitionQaWindowAutoExercise\": true,");
+            builder.AppendLine("  \"skinTransitionQaWindowAutoExercise\": " + (embeddedSkinCount > 1 ? "true" : "false") + ",");
             builder.AppendLine("  \"skinTransitionSpinStages\": " + SkinTransitionContract.SpinStages + ",");
             builder.AppendLine("  \"skinTransitionRevealStages\": " + SkinTransitionContract.RevealStages + ",");
             builder.AppendLine("  \"skinTransitionHoldStages\": " + SkinTransitionContract.HoldStages + ",");
@@ -2988,7 +2988,7 @@ namespace Yanan.Standalone
             builder.AppendLine("  \"skinTransitionResidentBitmapMaxBytes\": " + skinTransitionResidentBitmapBytes + ",");
             builder.AppendLine("  \"skinTransitionPendingArchiveMaxBytes\": " + SkinTransitionContract.MaximumPendingArchiveBytes + ",");
             builder.AppendLine("  \"skinTransitionMemoryBounded\": " + (skinTransitionMemoryBounded ? "true" : "false") + ",");
-            builder.AppendLine("  \"skinTransitionPreview\": \"" + EscapeJson(Path.GetFullPath(skinTransitionPreviewPath)) + "\",");
+            builder.AppendLine("  \"skinTransitionPreview\": \"" + EscapeJson(Path.GetFileName(skinTransitionPreviewPath)) + "\",");
             builder.AppendLine("  \"sittingPhonePersistentUntilClick\": " + (sittingPhoneContractValid ? "true" : "false") + ",");
             builder.AppendLine("  \"sittingPhoneEnterFrames\": \"0-3\",");
             builder.AppendLine("  \"sittingPhoneLoopFrames\": \"3-4-5-4\",");
@@ -3012,7 +3012,7 @@ namespace Yanan.Standalone
             builder.AppendLine("  \"ordinaryClickTriggersAnger\": false,");
             builder.AppendLine("  \"doubleClickWavePreserved\": true,");
             builder.AppendLine("  \"captureLossTriggersAnger\": false,");
-            builder.AppendLine("  \"preview\": \"" + EscapeJson(Path.GetFullPath(previewPath)) + "\",");
+            builder.AppendLine("  \"preview\": \"" + EscapeJson(Path.GetFileName(previewPath)) + "\",");
             builder.AppendLine("  \"errors\": [");
             for (int index = 0; index < errors.Count; index++)
             {
@@ -3405,6 +3405,7 @@ namespace Yanan.Standalone
             StartPosition = FormStartPosition.Manual;
             TopMost = true;
             AutoScaleMode = AutoScaleMode.None;
+            MaximumSize = new Size(FrameResource.SourceWidth, FrameResource.SourceHeight);
             ControlBox = false;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -5772,6 +5773,7 @@ namespace Yanan.Standalone
                 {
                     throw new Win32Exception(Marshal.GetLastWin32Error());
                 }
+                QaSaveRenderedFrame(bitmap);
             }
             finally
             {

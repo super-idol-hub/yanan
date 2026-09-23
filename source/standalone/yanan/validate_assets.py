@@ -31,6 +31,11 @@ def main():
                 if name.startswith(('frames/r09/','frames/r10/')): gaze.append({'frame':name,'bounds':bounds})
                 records.append({'path':name,'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
         except Exception as e: errors.append(name+': '+str(e))
+    if gaze:
+        heights=[item['bounds'][3]-item['bounds'][1] for item in gaze]
+        feet=[item['bounds'][3] for item in gaze]
+        if max(heights)-min(heights)>2 or len(set(feet))!=1:
+            errors.append('gaze rows must share the same figure height and foot anchor')
     motions=[]
     required_pairs=set()
     for r,n in enumerate(COUNTS):
