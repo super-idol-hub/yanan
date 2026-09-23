@@ -1,0 +1,35 @@
+name: Windows character QA
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build source and verify contracts
+        shell: pwsh
+        run: |
+          $p = 'source/standalone/yanan'
+          & "$p/build.ps1" -SourceOnly
+          & "$p/verify.ps1" -Executable "$p/bin/yanan-source-check.exe" -OutputDirectory 'qa-output/contracts' -ContractsOnly
+      - name: Build embedded character when assets are present
+        shell: pwsh
+        run: |
+          $p = 'source/standalone/yanan'
+          if (Test-Path "$p/resources/noir-frames.zip") {
+            & "$p/build.ps1"
+            & "$p/verify.ps1" -OutputDirectory 'qa-output/runtime' -WindowQa
+          }
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yanan-windows-build-and-qa
+          path: |
+            qa-output/
+            source/standalone/yanan/bin/*.exe
+          if-no-files-found: warn
