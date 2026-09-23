@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "yanan",
+  "status": "production-in-progress",
+  "product": {"displayName": "颜安", "idol": "颜安", "developer": "Anbunensi", "targetVersion": "1.0.0"},
+  "identityAnchorApproved": true,
+  "officialSkins": [{"id": "noir", "name": "黑白日常", "framesRequired": 176, "rowsRequired": 24, "resource": "Yanan.Standalone.Frames.zip"}],
+  "frameSize": [528, 808],
+  "singleExecutable": true,
+  "networkAccess": false,
+  "autoStartupDefault": false,
+  "releaseReady": false,
+  "qa": {"sourceCompilation": "passed", "runtime": "pending", "cleanWindowsManualAcceptance": "pending"}
+}

@@ -1,0 +1,154 @@
+{
+  "generator": "built-in image_gen",
+  "identityApproved": true,
+  "approval": "用户明确确认黑色外套、白色内搭、黑色长裤的写实全身形象",
+  "frameSize": [
+    528,
+    808
+  ],
+  "rowCounts": [
+    7,
+    8,
+    8,
+    4,
+    5,
+    8,
+    6,
+    6,
+    6,
+    8,
+    8,
+    6,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "commonPrompt": "Create ONE production transparent PNG sprite CONTACT SHEET of the exact photorealistic adult man in the APPROVED reference anchor, maintaining his FACE, voluminous black hair, black blazer, plain white crewneck, dark straight trousers and black shoes in EVERY pose. Preserve the reference likeness closely, no cartoon or generic face. GRID: exactly FOUR columns and TWO rows = 8 EQUAL CELLS with no gutters. Prefer 2112x1616 pixels (cells 528x808), or preserve 4x2 equal cells at another resolution. Reading order left-to-right then bottom row. One COMPLETE full-body figure per requested cell; UNUSED CELLS FULLY TRANSPARENT. Each standing figure centered in its cell, head at 6% cell height, soles at 94%, all same head/body SCALE and common foot baseline; hands, hair and both shoes fully inside cell, no overlap/cropping. For sitting/lying, keep original anatomical scale and floor baseline, do NOT scale figure to fill cell. TRUE transparent alpha background, no baked checkerboard, no ground shadows, no scene. One opaque body each cell, no afterimages, no words, labels, numbers, borders, logos or watermark. Key pose details: ",
+  "idlePrompt": "Create a production transparent PNG SPRITE CONTACT SHEET for a photorealistic desktop character, using the supplied APPROVED identity anchor as the exact same man, face, hair, clothing, proportions and rendering style. This is row r00, idle/blinking. CRITICAL GRID: exactly FOUR equal-width columns and TWO equal-height rows = 8 cells, no gutters, no grid lines, no labels. Prefer image size 2112x1616 (each cell 528x808); if another resolution is used keep exact 4-column by 2-row equal cells. Reading order left to right, then second row. Cells 1-7 contain ONE FULL BODY SAME PERSON each, centered, top margin 6%, sole baseline 94% of EACH cell, matching scale and perfectly aligned feet; cell 8 completely transparent. NO cropped shoes/head, NO overflow between cells. Exact approved outfit black blazer, white crewneck, black straight trousers and black shoes. Arms at sides, hands visible. For the 7 poses: c00 neutral open eyes; c01 eyelids slightly lowering; c02 eyes gently closed; c03 eyes reopening; c04 relaxed tiny inhale chest movement; c05 relaxed return; c06 neutral recovery pose. TINY changes only, same stance, no sway/translation. Preserve likeness carefully. Transparent alpha background in ALL cells, not a white/gray background or baked checkerboard. Single opaque body per cell, no afterimages, no shadows, no props, no words. Treat this as an authored key-pose contact sheet for review before individual sprite extraction.",
+  "rows": [
+    {
+      "row": 1,
+      "count": 8,
+      "prompt": "Walk right compatibility poses, side-facing to viewer's right, one full 8-pose gait cycle, feet lift alternately, arms swing slightly, no scene or travelling across cells."
+    },
+    {
+      "row": 2,
+      "count": 8,
+      "prompt": "Walk left compatibility poses, side-facing to viewer's left, one full 8-pose gait cycle, feet lift alternately, arms swing slightly, no scene or travelling across cells."
+    },
+    {
+      "row": 3,
+      "count": 4,
+      "prompt": "Greeting WAVE: c00 right arm begins raising, c01 elbow bent hand near cheek palm forward, c02 friendly open palm waves outward, c03 open palm waves inward with warm smile. Exactly FOUR full-body figures in the TOP row, bottom four cells transparent."
+    },
+    {
+      "row": 4,
+      "count": 5,
+      "prompt": "STARTLED when being dragged: c00 shoulders raise eyes widen; c01 elbows bend hands lift slightly; c02 held startled pose with both hands near chest palms down feet together; c03 settling shoulders; c04 return calm. Exactly five figures; unused last three cells transparent."
+    },
+    {
+      "row": 5,
+      "count": 8,
+      "prompt": "TIRED / disappointment: c00 neutral, c01 shoulders lower, c02 sigh glance down, c03 hand rubs forehead, c04 gentle closed-eye sigh, c05 lowers hand, c06 straightens posture, c07 calm neutral. Restrained natural acting."
+    },
+    {
+      "row": 6,
+      "count": 6,
+      "prompt": "WAITING patiently: c00 neutral, c01 checks left wrist, c02 holds watch glance (no watch prop necessary), c03 looks to viewer, c04 slight expectant head tilt, c05 neutral. Six figures; last two cells blank."
+    },
+    {
+      "row": 7,
+      "count": 6,
+      "prompt": "WORK / rehearsal: c00 holds a small plain closed script notebook by waist, c01 opens notebook, c02 reads attentively, c03 one hand lightly marks rhythm, c04 closes notebook, c05 notebook lowered beside body. Six figures; last two blank. No visible text."
+    },
+    {
+      "row": 8,
+      "count": 6,
+      "prompt": "CHECK / examine: c00 neutral, c01 slight forward head lean, c02 hand near chin, c03 thoughtful glance to left, c04 gentle nod, c05 returns neutral. Six figures last two blank."
+    },
+    {
+      "row": 9,
+      "count": 8,
+      "prompt": "EIGHT DISCRETE GAZE directions, NOT animation. Body, hands, legs and shoes identical and locked in the approved neutral pose in every cell; only head/eyes vary very subtly. Clockwise angle from UP: c00 up 0 degrees; c01 upper-right 22.5; c02 upper-right 45; c03 upper-right 67.5; c04 RIGHT 90; c05 lower-right 112.5; c06 lower-right135; c07 lower-right157.5. Viewer coordinates, tiny head changes, no body scaling."
+    },
+    {
+      "row": 10,
+      "count": 8,
+      "prompt": "EIGHT DISCRETE GAZE directions, NOT animation. Body, hands, legs and shoes identical and locked in the approved neutral pose in every cell; only head/eyes vary very subtly. Clockwise angle from UP: c00 DOWN180 degrees; c01 lower-left202.5; c02 lower-left225; c03 lower-left247.5; c04 LEFT270; c05 upper-left292.5; c06 upper-left315; c07 upper-left337.5. Viewer coordinates, tiny head changes, no body scaling."
+    },
+    {
+      "row": 11,
+      "count": 6,
+      "prompt": "DRAG RELEASE recovery: c00 slightly surprised, c01 settles weight, c02 mild playful frown hands near waist, c03 lifts one heel for a tiny restrained foot tap, c04 foot lands, c05 shoulders relax to neutral. Six figures last two blank. No anger toward viewer."
+    },
+    {
+      "row": 12,
+      "count": 8,
+      "prompt": "PLAYFUL: c00 neutral, c01 small curious head tilt, c02 mischievous smile, c03 brief wink, c04 relaxed V-sign near shoulder, c05 releases gesture, c06 amused smile, c07 neutral. Friendly, natural adult."
+    },
+    {
+      "row": 13,
+      "count": 8,
+      "prompt": "LAUGH: c00 smile starts, c01 smile grows, c02 genuine laugh mouth open slightly, c03 shoulder lift, c04 one hand briefly covers mouth, c05 lowers hand, c06 grin, c07 neutral smile. Same realistic face throughout."
+    },
+    {
+      "row": 14,
+      "count": 8,
+      "prompt": "SAD acting: c00 subdued, c01 eyes lower, c02 brows gently concerned, c03 one hand delicately dabs outer eye, c04 same mild sad expression, c05 hand lowers, c06 deep breath, c07 regains calm. No exaggerated tears or floating effects."
+    },
+    {
+      "row": 15,
+      "count": 8,
+      "prompt": "COSTUME SPECIAL: c00 neutral, c01 right hand moves to blazer lapel, c02 adjusts lapel, c03 left hand smooths jacket front, c04 straightens cuffs, c05 hands lower, c06 tiny pleased nod, c07 neutral. Exactly same jacket and white shirt."
+    },
+    {
+      "row": 16,
+      "count": 8,
+      "prompt": "RESERVED compatibility neutral breathing poses: c00 neutral; c01 slight inhale; c02 inhale; c03 exhale; c04 neutral; c05 blink half; c06 blink; c07 eyes open. Tiny natural movement."
+    },
+    {
+      "row": 17,
+      "count": 8,
+      "prompt": "RESERVED compatibility subtle head nod: c00 neutral, c01 slight tilt, c02 small nod down, c03 nod bottom, c04 rises, c05 neutral, c06 tiny smile, c07 neutral. Body and feet locked."
+    },
+    {
+      "row": 18,
+      "count": 8,
+      "prompt": "DANCE a friendly small standing groove: eight consecutive beat poses, knees softly bend, weight shifts gently left and right, forearms do simple coordinated gestures at chest/waist height, no acrobatics, full hands and feet always in each cell. c00/c07 close to neutral."
+    },
+    {
+      "row": 19,
+      "count": 8,
+      "prompt": "SING / stage: c00 small black wireless microphone at waist, c01 microphone raised, c02 begins singing, c03 free hand opens expressively, c04 slight head tilt singing, c05 relaxed musical gesture, c06 microphone lowers, c07 microphone at side. No lyrics/text, no stage or cables."
+    },
+    {
+      "row": 20,
+      "count": 8,
+      "prompt": "STAGE PRESENCE / actor pose: c00 neutral, c01 opens shoulders, c02 looks confidently to camera, c03 slight three-quarter body turn, c04 one hand briefly at jacket lapel, c05 small respectful nod, c06 faces front, c07 neutral. Natural charisma, same person."
+    },
+    {
+      "row": 21,
+      "count": 8,
+      "prompt": "CLOSE GREETING: c00 neutral, c01 one hand begins rising, c02 small finger-heart at chest level, c03 gentle friendly smile holds heart, c04 second hand lightly waves, c05 hand lowers, c06 relaxed friendly open posture, c07 final handsome relaxed front-facing pose with arms naturally at sides. Final c07 used for outfit transition."
+    },
+    {
+      "row": 22,
+      "count": 8,
+      "prompt": "PERSISTENT PHONE sequence. c00 neutral standing; c01 bends knees to sit; c02 settles cross-legged on invisible floor; c03 seated cross-legged with black smartphone in BOTH hands at lap; c04 SAME SEATED BODY as c03, only thumb scroll tiny; c05 SAME SEATED BODY as c03, thumb taps tiny; c06 puts phone away and begins standing; c07 fully standing neutral. c03/c04/c05 body and phone position MUST be identically registered, only thumb/fingers shift. Body head size SAME as standing reference (do NOT enlarge seated figure). Every entire body fits. No chair or visible floor."
+    },
+    {
+      "row": 23,
+      "count": 8,
+      "prompt": "PERSISTENT SLEEP sequence. c00 standing, c01 bending knees, c02 sitting on floor, c03 easing into curled side rest with head on viewer's left supported by hands, c04 comfortably asleep lying curled on left side with closed eyes; c05 eyes opening same lying pose, c06 pushes up to sitting, c07 fully standing awake. Keep head size and limb proportions consistent across standing/sitting/lying; do NOT enlarge sleeping person to fill cell. Entire curled sleeping body inside cell. No floor, bed, pillow, Z text or other effects."
+    }
+  ]
+}

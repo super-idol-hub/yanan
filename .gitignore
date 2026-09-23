@@ -1,0 +1,15 @@
+# Raw reference images and intermediate generation files stay outside the repo.
+work/
+references/
+bin/
+obj/
+__pycache__/
+release-assets/
+*.pyc
+*.exe
+*.dll
+*.pdb
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini
