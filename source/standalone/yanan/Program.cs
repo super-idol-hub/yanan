@@ -5102,9 +5102,19 @@ namespace Yanan.Standalone
             _tweenStep = 0;
             _longKeyFrameHoldConsumed = false;
             _frameCache.Clear();
-            ClientSize = new Size(
+            Size desiredSize = new Size(
                 Math.Max(1, (int)Math.Round(FrameResource.LogicalWidth * _scale)),
                 Math.Max(1, (int)Math.Round(FrameResource.LogicalHeight * _scale)));
+            ClientSize = desiredSize;
+            if (IsHandleCreated && ClientSize != desiredSize)
+            {
+                // Form.SetBoundsCore caps dimensions at MaxWindowTrackSize, even
+                // for a borderless programmatically sized layered window.
+                if (!NativeMethods.SetWindowPos(Handle, IntPtr.Zero, 0, 0,
+                    desiredSize.Width, desiredSize.Height, 0x0016))
+                    throw new Win32Exception(Marshal.GetLastWin32Error());
+                UpdateBounds();
+            }
             if (_skinTransitionActive
                 && !TryResizeSkinTransitionFrames(ClientSize.Width, ClientSize.Height))
             {
@@ -5168,7 +5178,8 @@ namespace Yanan.Standalone
         {
             Rectangle area = Screen.FromRectangle(Bounds).WorkingArea;
             int x = Math.Max(area.Left, Math.Min(Left, area.Right - Width));
-            int y = Math.Max(area.Top, Math.Min(Top, area.Bottom - Height));
+            int y = Height > area.Height ? area.Bottom - Height
+                : Math.Max(area.Top, Math.Min(Top, area.Bottom - Height));
             Location = new Point(x, y);
         }
 
@@ -5834,6 +5845,11 @@ namespace Yanan.Standalone
 
     internal static class NativeMethods
     {
+        [DllImport("user32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetWindowPos(IntPtr window, IntPtr insertAfter,
+            int x, int y, int width, int height, uint flags);
+
         [DllImport("user32.dll", SetLastError = true)]
         public static extern IntPtr GetDC(IntPtr windowHandle);
 
