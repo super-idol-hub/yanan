@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "testedSourceCommit": "64f7c34a141131072ef99965f7a45aec3896da00",
+  "manualAcceptance": false,
+  "files": [
+    {
+      "name": "yanan-1.0.0.exe",
+      "bytes": 27967488,
+      "sha256": "c9da287a592d59acbe28a64aba5ddca22b0983bb12c8981f40c6c4c137b02d92"
+    },
+    {
+      "name": "yanan-1.0.0-preview.zip",
+      "bytes": 27885114,
+      "sha256": "250a6ac950650c324436add1a27c20f0a8d604c416e3a103cb701f1033e7b2f5"
+    }
+  ],
+  "zipContents": [
+    "QA_REPORT.md",
+    "RELEASE_NOTES.md",
+    "RIGHTS.md",
+    "SHA256SUMS.txt",
+    "USER_GUIDE.md",
+    "yanan-1.0.0.exe"
+  ]
+}
