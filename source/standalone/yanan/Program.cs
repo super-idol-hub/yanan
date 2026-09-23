@@ -5112,6 +5112,7 @@ namespace Yanan.Standalone
                 Math.Max(1, (int)Math.Round(FrameResource.LogicalWidth * _scale)),
                 Math.Max(1, (int)Math.Round(FrameResource.LogicalHeight * _scale)));
             ClientSize = desiredSize;
+            QaTraceScale("after managed size");
             if (IsHandleCreated && ClientSize != desiredSize)
             {
                 // Form.SetBoundsCore caps dimensions at MaxWindowTrackSize, even
@@ -5120,6 +5121,7 @@ namespace Yanan.Standalone
                     desiredSize.Width, desiredSize.Height, 0x0016))
                     throw new Win32Exception(Marshal.GetLastWin32Error());
                 UpdateBounds();
+                QaTraceScale("after native size");
             }
             if (_skinTransitionActive
                 && !TryResizeSkinTransitionFrames(ClientSize.Width, ClientSize.Height))
@@ -5138,13 +5140,16 @@ namespace Yanan.Standalone
             if (preserveBottomCenter && IsHandleCreated)
             {
                 Location = new Point(oldCenterX - Width / 2, oldBottom - Height);
+                QaTraceScale("after foot alignment");
                 ClampToWorkingArea();
+                QaTraceScale("after clamp");
                 if (_movingToTarget)
                 {
                     Rectangle area = Screen.FromRectangle(Bounds).WorkingArea;
                     _roamTargetX = Math.Max(area.Left, Math.Min(_roamTargetX, area.Right - Width));
                 }
                 RenderCurrentFrame();
+                QaTraceScale("after scale render");
             }
         }
 

@@ -10,6 +10,16 @@ namespace Yanan.Standalone
     {
         private string _qaSnapshotName;
 
+        private void QaTraceScale(string step)
+        {
+            string directory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
+            if (!_qaMode || string.IsNullOrEmpty(directory)) return;
+            Directory.CreateDirectory(directory);
+            File.AppendAllText(Path.Combine(directory, "scale-trace.txt"),
+                step + " scale=" + _scale + " client=" + ClientSize + " bounds=" + Bounds
+                + " max=" + MaximumSize + " screen=" + Screen.PrimaryScreen.WorkingArea + Environment.NewLine);
+        }
+
         private void QaCapture(string name)
         {
             _qaSnapshotName = name;

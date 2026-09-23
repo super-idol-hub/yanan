@@ -19,6 +19,8 @@ function Invoke-Check([string[]]$Arguments) {
     if ($process.ExitCode -ne 0) {
         $errorFile = Join-Path $qa 'error.txt'
         if (Test-Path -LiteralPath $errorFile) { Get-Content -LiteralPath $errorFile | Write-Host }
+        $traceFile = Join-Path $qa 'scale-trace.txt'
+        if (Test-Path -LiteralPath $traceFile) { Get-Content -LiteralPath $traceFile | Write-Host }
         throw "QA failed with exit code $($process.ExitCode): $($Arguments -join ' ')"
     }
 }
