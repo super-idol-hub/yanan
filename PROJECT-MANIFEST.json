@@ -34,13 +34,13 @@
   "networkAccess": false,
   "autoStartupDefault": false,
   "releaseReady": false,
-  "testedSourceCommit": null,
-  "ciRun": null,
+  "testedSourceCommit": "f697917b3ad13e101282e2d82fdc5cd56e92bde2",
+  "ciRun": "https://github.com/super-idol-hub/yanan/actions/runs/35946380538",
   "qa": {
     "sourceCompilation": "passed",
     "assets": "passed",
-    "runtime": "pending",
-    "automatedWindowInteractions": "pending",
+    "runtime": "passed",
+    "automatedWindowInteractions": "passed",
     "cleanWindowsManualAcceptance": "pending"
   }
 }

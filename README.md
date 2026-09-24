@@ -2,7 +2,7 @@
 
 由 **Anbunensi** 制作的颜安粉丝向桌面互动角色。免费、非官方、非商业。
 
-> 双皮肤候选版正在验证。干净 Windows 10/11 人工验收尚未完成，尚未正式发布。详情见 [QA 报告](docs/QA_REPORT.md)。
+> 双皮肤候选版已通过资源和 Windows 自动交互验证。干净 Windows 10/11 人工验收尚未完成，尚未正式发布。详情见 [QA 报告](docs/QA_REPORT.md)。
 
 <img src="docs/visual/noir-anchor-v2.png" alt="修正比例的黑白日常造型" width="264"> <img src="docs/visual/stage-anchor-v1.png" alt="银曜舞台造型" width="264">
 

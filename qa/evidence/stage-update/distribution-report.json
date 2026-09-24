@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "version": "1.0.0",
+  "candidate": true,
+  "manualAcceptance": false,
+  "testedSourceCommit": "f697917b3ad13e101282e2d82fdc5cd56e92bde2",
+  "ciRun": "https://github.com/super-idol-hub/yanan/actions/runs/35946380538",
+  "embeddedSkins": [
+    "noir",
+    "stage"
+  ],
+  "frames": 352,
+  "motionFields": 630,
+  "phoneHoldPixelStable": true,
+  "files": [
+    {
+      "name": "yanan-1.0.0.exe",
+      "bytes": 61870592,
+      "sha256": "5e35aa3eb51f266f448ba97d59ce5c33a4ee5d9a6f19e914f196519432b850d5"
+    },
+    {
+      "name": "yanan-1.0.0-preview.zip",
+      "bytes": 61754322,
+      "sha256": "120b13027e2fa34bbf1edc6e27c89b635e09d4fb712b726bbbe45811a261870b"
+    }
+  ]
+}
