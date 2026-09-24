@@ -1,0 +1,22 @@
+{
+  "revision": "stage-and-proportions",
+  "userRequest": "新增舞台皮肤；修正短腿与头身比；手机坐定后低头看屏幕、保持人物大小和坐姿。",
+  "identity": "沿用用户已确认的脸型和发型",
+  "anchors": {
+    "noir": "visual/noir-anchor-v2.png",
+    "stage": "visual/stage-anchor-v1.png"
+  },
+  "generator": "built-in image_gen",
+  "prompt": "EDIT image 1, the existing transparent pose contact sheet. Image 2 is the FINAL corrected anatomy and wardrobe anchor. Keep image 1's exact pose sequence, number of figures and 4-column/2-row arrangement, but REPLACE its old short-legged/big-headed proportions with image 2's tall long-legged anatomy. Across EVERY full-body pose REDUCE head-plus-hair size by about 18% relative to shoulders, lengthen thighs and shins about 18% relative to torso, raise waist/crotch, and fit the figure to the same head-to-foot height in its cell. Target natural 7.5–8 heads tall, long legs, unchanged face identity and hair shape, correct normal hands. Do not merely change clothing while retaining old body proportions. Match the FINAL anchor image 2's proportions exactly. Every character has the SAME anatomical head/body scale; sitting and lying must not be enlarged to fill their cells. Preserve pose direction and actions. All characters wear exactly image 2's outfit and shoes with consistent tailoring. Four separate bodies across top row, remaining figures across bottom row, no overlap, no cropped head/limbs/shoes, 3% safety margin. TRANSPARENT PNG: keep image 1's clean zero-alpha background. Fully opaque person cutouts, no glow, fog, gradient, floor, shadows, grids, borders, text or watermark. ",
+  "registration": {
+    "canvas": [
+      528,
+      808
+    ],
+    "standingHeight": 728,
+    "soleBaseline": 780,
+    "idleAndGazeHeightNormalized": true,
+    "phoneAndSleepStandingEndpoints": "reuse same-skin r00/c00",
+    "phoneHolding": "static r22/c03; no loop/tween"
+  }
+}

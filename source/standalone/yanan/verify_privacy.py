@@ -20,11 +20,14 @@ for name in filter(None, files):
         if any(pattern.search(text) for pattern in patterns): errors.append(name + ': potential secret or local path')
     if re.search(r'(^|/)(references|sheets|work)/', name) or path.suffix.lower() in {'.exe','.dll','.mp3','.mp4','.wav'}:
         errors.append(name + ': forbidden source artifact')
-with zipfile.ZipFile(root/'source/standalone/yanan/resources/noir-frames.zip') as archive:
-    names = archive.namelist()
-    if any(not re.fullmatch(r'(?:frames/r\d{2}/c\d{2}\.png|motion/r\d{2}/c\d{2}-r\d{2}-c\d{2}\.mtn)', n) for n in names):
-        errors.append('unexpected embedded asset')
-report = {'ok': not errors, 'checkedTextFiles': text_count, 'embeddedEntries':len(names),
+embedded_entries = {}
+for skin in ('noir', 'stage'):
+    with zipfile.ZipFile(root/f'source/standalone/yanan/resources/{skin}-frames.zip') as archive:
+        names = archive.namelist()
+        embedded_entries[skin] = len(names)
+        if any(not re.fullmatch(r'(?:frames/r\d{2}/c\d{2}\.png|motion/r\d{2}/c\d{2}-r\d{2}-c\d{2}\.mtn)', n) for n in names):
+            errors.append(skin + ': unexpected embedded asset')
+report = {'ok': not errors, 'checkedTextFiles': text_count, 'embeddedEntries':embedded_entries,
           'scope':'tracked filenames, common credential patterns, local absolute paths, embedded archive paths', 'errors':errors}
 (root/'qa/evidence/privacy-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(report))

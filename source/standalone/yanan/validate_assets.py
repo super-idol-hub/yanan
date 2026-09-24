@@ -44,6 +44,7 @@ def main():
             required_pairs.add((r,c,r,(c+1)%n))
             if r: required_pairs.add((r,c,0,0))
     required_pairs.add((0,5,0,0))
+    required_pairs.add((22,3,22,6))
     for r,c,tr,tc in sorted(required_pairs):
         name=f'motion/r{r:02}/c{c:02}-r{tr:02}-c{tc:02}.mtn'
         path=args.root/name

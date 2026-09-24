@@ -1,7 +1,10 @@
 {
   "ok": true,
-  "checkedTextFiles": 31,
-  "embeddedEntries": 490,
+  "checkedTextFiles": 37,
+  "embeddedEntries": {
+    "noir": 491,
+    "stage": 491
+  },
   "scope": "tracked filenames, common credential patterns, local absolute paths, embedded archive paths",
   "errors": []
 }

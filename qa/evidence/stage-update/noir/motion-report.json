@@ -1,0 +1,6011 @@
+{
+  "ok": true,
+  "manifest": {
+    "formatVersion": 1,
+    "algorithm": "single-owner bidirectional Farneback mesh warp",
+    "logicalSize": [
+      132,
+      202
+    ],
+    "gridSize": [
+      17,
+      25
+    ],
+    "quantization": 64.0,
+    "pairCount": 315,
+    "exclusiveSwingLoopWrapMesh": false,
+    "exclusiveSwingExitMesh": false,
+    "singleSilhouette": true,
+    "crossFade": false
+  },
+  "minimumMidpointOpaqueCorePixels": 3154,
+  "minimumMidpointLargestComponentCoverage": 0.9997021593447506,
+  "qaContact": "motion-contact.jpg",
+  "records": [
+    {
+      "source": [
+        0,
+        0
+      ],
+      "target": [
+        0,
+        1
+      ],
+      "entry": "motion/r00/c00-r00-c01.mtn",
+      "bytes": 3412,
+      "sha256": "6b19b7a1f6c2e930c3cd1baf7bcc8cdbac4177663e7240e9a3911abbfea98b90",
+      "midpoint": {
+        "visiblePixels": 7204,
+        "opaqueCorePixels": 6448,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        1
+      ],
+      "target": [
+        0,
+        2
+      ],
+      "entry": "motion/r00/c01-r00-c02.mtn",
+      "bytes": 3412,
+      "sha256": "e36d3b76d188f2aa6658e8b7a814f7647fc6ef45607e6be4a27c79991f0399e2",
+      "midpoint": {
+        "visiblePixels": 7232,
+        "opaqueCorePixels": 6499,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        2
+      ],
+      "target": [
+        0,
+        3
+      ],
+      "entry": "motion/r00/c02-r00-c03.mtn",
+      "bytes": 3412,
+      "sha256": "ca3b6ed94ed2526a9b5f6f852c717353f28c45e1f5ba0204fddd2fb69c40cbf0",
+      "midpoint": {
+        "visiblePixels": 7256,
+        "opaqueCorePixels": 6491,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        3
+      ],
+      "target": [
+        0,
+        4
+      ],
+      "entry": "motion/r00/c03-r00-c04.mtn",
+      "bytes": 3412,
+      "sha256": "35a5318c2cc13af8a460ced7560ebf3a03080928bd8999e4e0d8dded0577c19b",
+      "midpoint": {
+        "visiblePixels": 7523,
+        "opaqueCorePixels": 6638,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        4
+      ],
+      "target": [
+        0,
+        5
+      ],
+      "entry": "motion/r00/c04-r00-c05.mtn",
+      "bytes": 3412,
+      "sha256": "73ddc704609af98a90acbaae126a431a362e9580bf4bb1d33ca31b2c21b723fd",
+      "midpoint": {
+        "visiblePixels": 7543,
+        "opaqueCorePixels": 6743,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r00/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c0d0694c419b1fc380c83a9ca2622381854735654b0b2b95111e9ad2fcb1a3f8",
+      "midpoint": {
+        "visiblePixels": 7366,
+        "opaqueCorePixels": 6479,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        5
+      ],
+      "target": [
+        0,
+        6
+      ],
+      "entry": "motion/r00/c05-r00-c06.mtn",
+      "bytes": 3412,
+      "sha256": "3ca0b89523b71cd76c9205c349d0b6b5e88423d23e97907c664e94fe2bb0e56b",
+      "midpoint": {
+        "visiblePixels": 7587,
+        "opaqueCorePixels": 6830,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        0,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r00/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c2dfba80c17f2dde54587da7de0c99bf37914d239f598a44ace44a885ba07f1a",
+      "midpoint": {
+        "visiblePixels": 7400,
+        "opaqueCorePixels": 6505,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a4bb26a7cad3f483a9f2968632ed891eb0edd37a06ecdbee4521fcf018907ab3",
+      "midpoint": {
+        "visiblePixels": 6955,
+        "opaqueCorePixels": 6029,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        0
+      ],
+      "target": [
+        1,
+        1
+      ],
+      "entry": "motion/r01/c00-r01-c01.mtn",
+      "bytes": 3412,
+      "sha256": "1627c6f5ac504a7246bb02fc161fbd19947e82e16c756f4e13bcb595f6355080",
+      "midpoint": {
+        "visiblePixels": 5809,
+        "opaqueCorePixels": 4947,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2eb9d0426ec470a6160e87dcae2579c1e2b6dd0e24c4e2c0e1adfe79f00e9197",
+      "midpoint": {
+        "visiblePixels": 7253,
+        "opaqueCorePixels": 6276,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        1
+      ],
+      "target": [
+        1,
+        2
+      ],
+      "entry": "motion/r01/c01-r01-c02.mtn",
+      "bytes": 3412,
+      "sha256": "fe55934163279cdf627dae7ca60d485b4f7f193f2ceabfbc087785dbbc971337",
+      "midpoint": {
+        "visiblePixels": 6238,
+        "opaqueCorePixels": 5401,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "6f6b3e2b47d03373ff2298c4ef2452702a5a398dd3d0acc2c685b47b49b3a974",
+      "midpoint": {
+        "visiblePixels": 6924,
+        "opaqueCorePixels": 5952,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        2
+      ],
+      "target": [
+        1,
+        3
+      ],
+      "entry": "motion/r01/c02-r01-c03.mtn",
+      "bytes": 3412,
+      "sha256": "0593831ff96444b4b1b18320d72fdd2749e5ab473d5055666a25511e52ab8ca8",
+      "midpoint": {
+        "visiblePixels": 5642,
+        "opaqueCorePixels": 4770,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4ff2b931e142f928fc2ae2bd66a6d180e8a97c7246392c4b15380b5ffa03ec22",
+      "midpoint": {
+        "visiblePixels": 6964,
+        "opaqueCorePixels": 6014,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        3
+      ],
+      "target": [
+        1,
+        4
+      ],
+      "entry": "motion/r01/c03-r01-c04.mtn",
+      "bytes": 3412,
+      "sha256": "828f34d65f981e787dbdf5e8c6a8af0d877aab4962a6b3fdb3ff1e931d93ef2c",
+      "midpoint": {
+        "visiblePixels": 6362,
+        "opaqueCorePixels": 5500,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "424c5fbd5ecdde6b77a59bcd1cdc53687b9390d039c0a06ef70b649b572d2044",
+      "midpoint": {
+        "visiblePixels": 6945,
+        "opaqueCorePixels": 5978,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        4
+      ],
+      "target": [
+        1,
+        5
+      ],
+      "entry": "motion/r01/c04-r01-c05.mtn",
+      "bytes": 3412,
+      "sha256": "15fd57a64c76ce77b4ee3d91c2aeee8e055ed09d078dbb14eabc325bf478b0ad",
+      "midpoint": {
+        "visiblePixels": 5126,
+        "opaqueCorePixels": 4316,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0bce9ae9f0ac2e5829ee6037b28524d911a03734fa884a70f2b1ae54629caa90",
+      "midpoint": {
+        "visiblePixels": 6895,
+        "opaqueCorePixels": 5939,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        5
+      ],
+      "target": [
+        1,
+        6
+      ],
+      "entry": "motion/r01/c05-r01-c06.mtn",
+      "bytes": 3412,
+      "sha256": "6762f096d53b50dc08150723204e1f1380953ad18d6997b7c74e49678b459ea4",
+      "midpoint": {
+        "visiblePixels": 5385,
+        "opaqueCorePixels": 4620,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2df059575e0308ade28b9694ed7a068f894f477421c13c197dbdcd2da39cebb4",
+      "midpoint": {
+        "visiblePixels": 6975,
+        "opaqueCorePixels": 6019,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        6
+      ],
+      "target": [
+        1,
+        7
+      ],
+      "entry": "motion/r01/c06-r01-c07.mtn",
+      "bytes": 3412,
+      "sha256": "1c10d4c1c78142ddd7a00dc54dda178167cc85cadf96da3c651767d06eedc178",
+      "midpoint": {
+        "visiblePixels": 6973,
+        "opaqueCorePixels": 6072,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r01/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "757d3726ca7633d331641723b681cf7a8719f5f014e520f52b5c75607ec9449a",
+      "midpoint": {
+        "visiblePixels": 7360,
+        "opaqueCorePixels": 6364,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        1,
+        7
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "entry": "motion/r01/c07-r01-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0cae69f8ff82fceafaa445f65cbdd8813f7b7050b63dda73355d23912c6807d3",
+      "midpoint": {
+        "visiblePixels": 4848,
+        "opaqueCorePixels": 4108,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "26c1fd5bbf746c3ae107e8a8ce096fcf4d9f527e7d33028d47aff6b1ee7b72f1",
+      "midpoint": {
+        "visiblePixels": 7318,
+        "opaqueCorePixels": 6313,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        0
+      ],
+      "target": [
+        2,
+        1
+      ],
+      "entry": "motion/r02/c00-r02-c01.mtn",
+      "bytes": 3412,
+      "sha256": "95a614146cafe5e9dda6e1a6eb9769b77c64dce5a0f91a967dffe7b51a94bd09",
+      "midpoint": {
+        "visiblePixels": 7103,
+        "opaqueCorePixels": 6124,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "38a37404ae43f54c54a55f60a32565861c57f89daa86ba5e920023cbf0e7214a",
+      "midpoint": {
+        "visiblePixels": 7189,
+        "opaqueCorePixels": 6232,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        1
+      ],
+      "target": [
+        2,
+        2
+      ],
+      "entry": "motion/r02/c01-r02-c02.mtn",
+      "bytes": 3412,
+      "sha256": "076a3e0a30b11ac676d9efd9e53c1c4da7fa45818b861fbf116ee2f577f2e69e",
+      "midpoint": {
+        "visiblePixels": 7144,
+        "opaqueCorePixels": 6156,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "5bd29964989993539c8bc51367cd22afda233491d5870efa3153a2d67ad418ff",
+      "midpoint": {
+        "visiblePixels": 7119,
+        "opaqueCorePixels": 6146,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        2
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "entry": "motion/r02/c02-r02-c03.mtn",
+      "bytes": 3412,
+      "sha256": "c0adacc3626b42e5dab8a7d5935f7fea339e3486525e11cab18c1627f39b18ab",
+      "midpoint": {
+        "visiblePixels": 7329,
+        "opaqueCorePixels": 6311,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e077c0d9759e3630830f7f508d77ad78601bce90ee1cb957e55ffdcec5732301",
+      "midpoint": {
+        "visiblePixels": 7186,
+        "opaqueCorePixels": 6207,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        4
+      ],
+      "entry": "motion/r02/c03-r02-c04.mtn",
+      "bytes": 3412,
+      "sha256": "af5056f26de607c126128b8fa908145aae9f7baa96a8a03542acfd60f30f2899",
+      "midpoint": {
+        "visiblePixels": 6716,
+        "opaqueCorePixels": 5805,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "6793df0aa7d71ec454cd63c3a83040c1639afc7797afc069f097845a3897249d",
+      "midpoint": {
+        "visiblePixels": 7179,
+        "opaqueCorePixels": 6197,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        4
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "entry": "motion/r02/c04-r02-c05.mtn",
+      "bytes": 3412,
+      "sha256": "ec972effdf7bb3eff65b82ee6cf1bf3749a35eb51f8688fca887353b56898833",
+      "midpoint": {
+        "visiblePixels": 6937,
+        "opaqueCorePixels": 5981,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b9ba873da50636165d88f0aab39a12b1eb3cef48bbc0ad3a5c87c5d70dafd2d5",
+      "midpoint": {
+        "visiblePixels": 7150,
+        "opaqueCorePixels": 6184,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        6
+      ],
+      "entry": "motion/r02/c05-r02-c06.mtn",
+      "bytes": 3412,
+      "sha256": "1ad793e0cb512d2e405216bfc202757c75ad1644fad60bfc9972cec576f8bf4f",
+      "midpoint": {
+        "visiblePixels": 7149,
+        "opaqueCorePixels": 6172,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e1b55fd87a9a04cb459b4ec43be60c362e5cf2159b29975608c5f761d353e5be",
+      "midpoint": {
+        "visiblePixels": 7152,
+        "opaqueCorePixels": 6217,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        6
+      ],
+      "target": [
+        2,
+        7
+      ],
+      "entry": "motion/r02/c06-r02-c07.mtn",
+      "bytes": 3412,
+      "sha256": "762fd7081ccb0059e37d9458b1f86013cc8d4c814ff5168768faf3622949d17e",
+      "midpoint": {
+        "visiblePixels": 7189,
+        "opaqueCorePixels": 6159,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r02/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "5166e4cbf39a3a051287bfaffa7cef96626dcc6f6a23c04de53bb95de00ae219",
+      "midpoint": {
+        "visiblePixels": 7167,
+        "opaqueCorePixels": 6181,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        2,
+        7
+      ],
+      "target": [
+        2,
+        0
+      ],
+      "entry": "motion/r02/c07-r02-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a716ab5028bf30bf9e0e6ddc937f5bd5b00028d4be996c30a41ac03b28aa38d5",
+      "midpoint": {
+        "visiblePixels": 7181,
+        "opaqueCorePixels": 6193,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r03/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0865001e62cf1ef8b3828188366737c778f4fd75ab271d057390995b73024736",
+      "midpoint": {
+        "visiblePixels": 7320,
+        "opaqueCorePixels": 6396,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        0
+      ],
+      "target": [
+        3,
+        1
+      ],
+      "entry": "motion/r03/c00-r03-c01.mtn",
+      "bytes": 3412,
+      "sha256": "96f72734cc1daee9466061b73c081a7f8b3f742c5ed8fc7fbbce59c0d45fe3f2",
+      "midpoint": {
+        "visiblePixels": 6727,
+        "opaqueCorePixels": 5947,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r03/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c335dd2b656e09343b5ba79336d12bf881e982f553ca9ffaa1ebfd7ba7fca38d",
+      "midpoint": {
+        "visiblePixels": 7332,
+        "opaqueCorePixels": 6396,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        1
+      ],
+      "target": [
+        3,
+        2
+      ],
+      "entry": "motion/r03/c01-r03-c02.mtn",
+      "bytes": 3412,
+      "sha256": "219552e47ffd24159f4123aeb68481f874f6113faa03c22ccad86c6790da8ad1",
+      "midpoint": {
+        "visiblePixels": 6850,
+        "opaqueCorePixels": 6040,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r03/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4dd3d0e66d0e79eba9d64abd72e92704481b0be81263da8b12a58d6ebe4f46fb",
+      "midpoint": {
+        "visiblePixels": 7249,
+        "opaqueCorePixels": 6305,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        2
+      ],
+      "target": [
+        3,
+        3
+      ],
+      "entry": "motion/r03/c02-r03-c03.mtn",
+      "bytes": 3412,
+      "sha256": "4f76e7237ed4c9863341eb8f9f12e2f80a3379f69bd55563cf3facbdce787778",
+      "midpoint": {
+        "visiblePixels": 6742,
+        "opaqueCorePixels": 5911,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r03/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e410d9266eceefaccdb1728e43914185da565ba6bc35aa0bad800d86dfe16aac",
+      "midpoint": {
+        "visiblePixels": 7312,
+        "opaqueCorePixels": 6350,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        3,
+        3
+      ],
+      "target": [
+        3,
+        0
+      ],
+      "entry": "motion/r03/c03-r03-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ff656117c6347a17c87702cc279393e5aa519ebb70e9dd868e19809a39275703",
+      "midpoint": {
+        "visiblePixels": 6663,
+        "opaqueCorePixels": 5818,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r04/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a4f14ac0af4847c6a3ee0397c9943eb9ed7e6596a8a27b3545881cbbb5675987",
+      "midpoint": {
+        "visiblePixels": 7270,
+        "opaqueCorePixels": 6369,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        0
+      ],
+      "target": [
+        4,
+        1
+      ],
+      "entry": "motion/r04/c00-r04-c01.mtn",
+      "bytes": 3412,
+      "sha256": "0cb32785ebf02329dd9f7c8c8c5ea881af896cd235dbfd3429487adda50e5b3e",
+      "midpoint": {
+        "visiblePixels": 6729,
+        "opaqueCorePixels": 5952,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r04/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "00fb17b5bd320e0c803c6ddd7307d476cfd71e797ea2983844a296c8154e1185",
+      "midpoint": {
+        "visiblePixels": 7078,
+        "opaqueCorePixels": 6156,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        1
+      ],
+      "target": [
+        4,
+        2
+      ],
+      "entry": "motion/r04/c01-r04-c02.mtn",
+      "bytes": 3412,
+      "sha256": "830af1350903b70f9fc6c181d2aa6a927684562ed319a41a407ac0712fa1eff3",
+      "midpoint": {
+        "visiblePixels": 6919,
+        "opaqueCorePixels": 6158,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r04/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "bb803a831ba4d5a9f1e2c82cc748235e0956648595dad968c86424c4e833a3d3",
+      "midpoint": {
+        "visiblePixels": 7051,
+        "opaqueCorePixels": 6149,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        2
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "entry": "motion/r04/c02-r04-c03.mtn",
+      "bytes": 3412,
+      "sha256": "ae43c88a1e7c715d1ef350e4992bd840bf048074d3573b6f94b8c984ac7d27e1",
+      "midpoint": {
+        "visiblePixels": 7024,
+        "opaqueCorePixels": 6294,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r04/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b68cfbd8fe87da479954c8e5eef5bac0b201af9af15b49b00eb9a5a264cdd5d7",
+      "midpoint": {
+        "visiblePixels": 7059,
+        "opaqueCorePixels": 6106,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        3
+      ],
+      "target": [
+        4,
+        4
+      ],
+      "entry": "motion/r04/c03-r04-c04.mtn",
+      "bytes": 3412,
+      "sha256": "523cca5218616f3fd1f7f05ec6079ca3cd61bf835b7d71a5d18b98bd11f296e2",
+      "midpoint": {
+        "visiblePixels": 6777,
+        "opaqueCorePixels": 6023,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r04/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ecbb06d821c2f4333056bcffccbe4a9c4a21ee5d5e45ca2f41e7d796ccd784c1",
+      "midpoint": {
+        "visiblePixels": 7044,
+        "opaqueCorePixels": 6112,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        4,
+        4
+      ],
+      "target": [
+        4,
+        0
+      ],
+      "entry": "motion/r04/c04-r04-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e6678bab98627c97bba3a24c75e025f6cf824d81f17ac6c7904e258b46b16385",
+      "midpoint": {
+        "visiblePixels": 7456,
+        "opaqueCorePixels": 6382,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b73872e8057950fbadfa66a7d2fad0846ec3a4078adfcbeea0e77d9596b10c83",
+      "midpoint": {
+        "visiblePixels": 7302,
+        "opaqueCorePixels": 6259,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        0
+      ],
+      "target": [
+        5,
+        1
+      ],
+      "entry": "motion/r05/c00-r05-c01.mtn",
+      "bytes": 3412,
+      "sha256": "bfe6cadceeb7e95e8d9c8b615441a42886384631bb66b2a7f2108915ab93aacb",
+      "midpoint": {
+        "visiblePixels": 7254,
+        "opaqueCorePixels": 6486,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "8e9c9d4f0543486a267eff027e44a31ae3fc1db2a100678ca29ef5098ea4cf0a",
+      "midpoint": {
+        "visiblePixels": 7241,
+        "opaqueCorePixels": 6216,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        1
+      ],
+      "target": [
+        5,
+        2
+      ],
+      "entry": "motion/r05/c01-r05-c02.mtn",
+      "bytes": 3412,
+      "sha256": "64e93f543282b74d6a565a783588fe206aefa74b955b8208362148c3b4ed2932",
+      "midpoint": {
+        "visiblePixels": 7337,
+        "opaqueCorePixels": 6509,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "8b0725fca5bd5cb97c249a44ce5e77b42e3a8375ae86a7950cffd1f07a5120ac",
+      "midpoint": {
+        "visiblePixels": 7234,
+        "opaqueCorePixels": 6224,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        2
+      ],
+      "target": [
+        5,
+        3
+      ],
+      "entry": "motion/r05/c02-r05-c03.mtn",
+      "bytes": 3412,
+      "sha256": "70872cb1c708cb5fb0fc1aa2da97ca83f939ee9cb5ee01946828756ec151fc0f",
+      "midpoint": {
+        "visiblePixels": 7214,
+        "opaqueCorePixels": 6369,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "dbbd9d29fd8cf7f4e77fb5e904c853299ff56045754979b4db977c480398dff8",
+      "midpoint": {
+        "visiblePixels": 7295,
+        "opaqueCorePixels": 6349,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        3
+      ],
+      "target": [
+        5,
+        4
+      ],
+      "entry": "motion/r05/c03-r05-c04.mtn",
+      "bytes": 3412,
+      "sha256": "4b51ee09535c1256bc29c6180dc4cc237d942706db9cdc9f36422882e71f200b",
+      "midpoint": {
+        "visiblePixels": 7230,
+        "opaqueCorePixels": 6360,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "75d9db169dea5ed84e820d5bad755c9ece11a72983c1e4e8b63b7c380314a890",
+      "midpoint": {
+        "visiblePixels": 7288,
+        "opaqueCorePixels": 6293,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        4
+      ],
+      "target": [
+        5,
+        5
+      ],
+      "entry": "motion/r05/c04-r05-c05.mtn",
+      "bytes": 3412,
+      "sha256": "02591522a10137ea1f22cf32b9f6a6922ae388b49eec9874d4452489c02fa016",
+      "midpoint": {
+        "visiblePixels": 7426,
+        "opaqueCorePixels": 6561,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7da610f7de2846ef4a91e44f501c8dbc92262c7ac74b3ac368d918f934512d46",
+      "midpoint": {
+        "visiblePixels": 7264,
+        "opaqueCorePixels": 6274,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        5
+      ],
+      "target": [
+        5,
+        6
+      ],
+      "entry": "motion/r05/c05-r05-c06.mtn",
+      "bytes": 3412,
+      "sha256": "6f201f8cd70ac078da5648adfb85d50e6b28f9331a808b063c854d8e97c9e5b6",
+      "midpoint": {
+        "visiblePixels": 7369,
+        "opaqueCorePixels": 6522,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1d17589f38c838f265b1c46194e8ebe64fd4346a2cb646b07891a6448fb1e222",
+      "midpoint": {
+        "visiblePixels": 7331,
+        "opaqueCorePixels": 6305,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        6
+      ],
+      "target": [
+        5,
+        7
+      ],
+      "entry": "motion/r05/c06-r05-c07.mtn",
+      "bytes": 3412,
+      "sha256": "3d70f5d7801c437e06bf92fda56e1c284355d45fe809f3052a16257512b8296f",
+      "midpoint": {
+        "visiblePixels": 7430,
+        "opaqueCorePixels": 6613,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r05/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "23946261cff3d869c718125c8bdd9710899f57857ded36e7163d224b11b24179",
+      "midpoint": {
+        "visiblePixels": 7333,
+        "opaqueCorePixels": 6401,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        5,
+        7
+      ],
+      "target": [
+        5,
+        0
+      ],
+      "entry": "motion/r05/c07-r05-c00.mtn",
+      "bytes": 3412,
+      "sha256": "eb77a9ac1e1e09496a478a403322cb70b3ecb3445bdee0542c2a762590a19a08",
+      "midpoint": {
+        "visiblePixels": 7367,
+        "opaqueCorePixels": 6502,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "eb66aaaa9d95d5c9f6a5db28083ed590aa7172c219291407b01d74af13bdadf0",
+      "midpoint": {
+        "visiblePixels": 7257,
+        "opaqueCorePixels": 6339,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        0
+      ],
+      "target": [
+        6,
+        1
+      ],
+      "entry": "motion/r06/c00-r06-c01.mtn",
+      "bytes": 3412,
+      "sha256": "fe6d22b165144a71f458f82b2be0d579a658bfdaf7452e727deba2a5749b736c",
+      "midpoint": {
+        "visiblePixels": 7028,
+        "opaqueCorePixels": 6184,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ba0f3c851a7db8291591496b18af8fa2b65a1c8301815158a04905d0b9100f2d",
+      "midpoint": {
+        "visiblePixels": 7216,
+        "opaqueCorePixels": 6326,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        1
+      ],
+      "target": [
+        6,
+        2
+      ],
+      "entry": "motion/r06/c01-r06-c02.mtn",
+      "bytes": 3412,
+      "sha256": "9db70d01a34fabfc56ca9026b6ec4d532c43d6835378d44b2da7f6e152b86479",
+      "midpoint": {
+        "visiblePixels": 6852,
+        "opaqueCorePixels": 5923,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "fe0d5132a8d2faa9a287c3e5e8de1bff0954e5d7ee17b2b13f17b378d55eb426",
+      "midpoint": {
+        "visiblePixels": 7130,
+        "opaqueCorePixels": 6263,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        2
+      ],
+      "target": [
+        6,
+        3
+      ],
+      "entry": "motion/r06/c02-r06-c03.mtn",
+      "bytes": 3412,
+      "sha256": "b6a583cf15a3dc73271cd32cb655b07e1b92bb97aad2cdb43cfed7dac1358966",
+      "midpoint": {
+        "visiblePixels": 6891,
+        "opaqueCorePixels": 5995,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4aecf5894587d6c88d260254f505a0ea2540f51804ab5b0f1d1e196f77c1dd2c",
+      "midpoint": {
+        "visiblePixels": 7211,
+        "opaqueCorePixels": 6301,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        3
+      ],
+      "target": [
+        6,
+        4
+      ],
+      "entry": "motion/r06/c03-r06-c04.mtn",
+      "bytes": 3412,
+      "sha256": "367cf5eff9eb0b544bb93670f0f161e1040b6ed1b91f45ccc8d14fc177763aec",
+      "midpoint": {
+        "visiblePixels": 6954,
+        "opaqueCorePixels": 6197,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "78de8b4e41897cdfed3f996eb5b8bea8f44ff591677aed72467363ec280b3076",
+      "midpoint": {
+        "visiblePixels": 7212,
+        "opaqueCorePixels": 6318,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        4
+      ],
+      "target": [
+        6,
+        5
+      ],
+      "entry": "motion/r06/c04-r06-c05.mtn",
+      "bytes": 3412,
+      "sha256": "1cc17bc2f2e8e7b329ec326ffedadb027f02442d9b36906a90b5b683dec02356",
+      "midpoint": {
+        "visiblePixels": 7188,
+        "opaqueCorePixels": 6365,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r06/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "cbb49a2a1f5558ebd7f45cd8e050dfecf486b26a187670fbeb781c118736cbba",
+      "midpoint": {
+        "visiblePixels": 7291,
+        "opaqueCorePixels": 6390,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        6,
+        5
+      ],
+      "target": [
+        6,
+        0
+      ],
+      "entry": "motion/r06/c05-r06-c00.mtn",
+      "bytes": 3412,
+      "sha256": "6072b9fd3ae688c40ddf51a318a3c5c9860a614b3859422cc0cbc486b84448cf",
+      "midpoint": {
+        "visiblePixels": 7248,
+        "opaqueCorePixels": 6347,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7a9a7287b49d6ddbd1d63806fef10a7c1ab55ecc7182a0a8d639ddb4cae86c82",
+      "midpoint": {
+        "visiblePixels": 7448,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        0
+      ],
+      "target": [
+        7,
+        1
+      ],
+      "entry": "motion/r07/c00-r07-c01.mtn",
+      "bytes": 3412,
+      "sha256": "91ae3bf5a1345e64d48d32460ff01ce7bc5b0ab6da0a161dced879e1d6053d87",
+      "midpoint": {
+        "visiblePixels": 6827,
+        "opaqueCorePixels": 5923,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41b0b921f13cf27f08657c60a74e4961c9143484e42696877bb3f45d03075b53",
+      "midpoint": {
+        "visiblePixels": 7226,
+        "opaqueCorePixels": 6404,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        1
+      ],
+      "target": [
+        7,
+        2
+      ],
+      "entry": "motion/r07/c01-r07-c02.mtn",
+      "bytes": 3412,
+      "sha256": "6f797eeb0b509874a89c10482f1c029c192b586169339b1c372452451b16f197",
+      "midpoint": {
+        "visiblePixels": 6647,
+        "opaqueCorePixels": 5888,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "66f0aa8148e6b999e8eef606ea1c4511d1ddebc27e8497cc86fdb58025388c33",
+      "midpoint": {
+        "visiblePixels": 7201,
+        "opaqueCorePixels": 6346,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        2
+      ],
+      "target": [
+        7,
+        3
+      ],
+      "entry": "motion/r07/c02-r07-c03.mtn",
+      "bytes": 3412,
+      "sha256": "e8ce9f54edd59d61c79783db3949c141df577d59f8a603ef0f8b8d63fd1d9d4b",
+      "midpoint": {
+        "visiblePixels": 6799,
+        "opaqueCorePixels": 5969,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "bf6b7cbb82f584677f28fc8572ff2fdc3790aecdeb2d263d15aa3db91190da30",
+      "midpoint": {
+        "visiblePixels": 7120,
+        "opaqueCorePixels": 6239,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        3
+      ],
+      "target": [
+        7,
+        4
+      ],
+      "entry": "motion/r07/c03-r07-c04.mtn",
+      "bytes": 3412,
+      "sha256": "56551ca2c5e0dac9fde358c77dd1d27b4ed950cc209a2becec41933b7a297b0d",
+      "midpoint": {
+        "visiblePixels": 6715,
+        "opaqueCorePixels": 5872,
+        "largestComponentCoverage": 0.9997021593447506,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "df4e43915e100a63dcdeaaa11c18838bf7ea36de60fe883b4fb3fe8d4865a666",
+      "midpoint": {
+        "visiblePixels": 7349,
+        "opaqueCorePixels": 6428,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        4
+      ],
+      "target": [
+        7,
+        5
+      ],
+      "entry": "motion/r07/c04-r07-c05.mtn",
+      "bytes": 3412,
+      "sha256": "947d105255f6af46b94b07e6bb72d5ca743da947dac058b97c95094ef2345dd3",
+      "midpoint": {
+        "visiblePixels": 6981,
+        "opaqueCorePixels": 6125,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r07/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4d53de2f58108b9aab7b538694c9f8898602d5cd14ca61c83e01450abd2b553f",
+      "midpoint": {
+        "visiblePixels": 7353,
+        "opaqueCorePixels": 6415,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        7,
+        5
+      ],
+      "target": [
+        7,
+        0
+      ],
+      "entry": "motion/r07/c05-r07-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e160f0e5cc89d47e472dd4a61439564a743bd6d4dc23b61724edb8ae173b769f",
+      "midpoint": {
+        "visiblePixels": 6599,
+        "opaqueCorePixels": 5664,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "12c52ece9f0fc22d003675f86227874a528edf2d9591e6be91fc276fc67d9ef7",
+      "midpoint": {
+        "visiblePixels": 7349,
+        "opaqueCorePixels": 6387,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        0
+      ],
+      "target": [
+        8,
+        1
+      ],
+      "entry": "motion/r08/c00-r08-c01.mtn",
+      "bytes": 3412,
+      "sha256": "98e0d0ffe3f55528c12956d2ca7781a16d35c62c835e8b7f901b925ec2a34e56",
+      "midpoint": {
+        "visiblePixels": 7233,
+        "opaqueCorePixels": 6316,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2a1c5a16bc80e9a206cc474f320c506c11864ab648bfc217b9c2df71ba2e03ec",
+      "midpoint": {
+        "visiblePixels": 7434,
+        "opaqueCorePixels": 6473,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        1
+      ],
+      "target": [
+        8,
+        2
+      ],
+      "entry": "motion/r08/c01-r08-c02.mtn",
+      "bytes": 3412,
+      "sha256": "02566a44f07cb2847322bea9930c1e671df80fe1947c997acc431facce1f250e",
+      "midpoint": {
+        "visiblePixels": 6652,
+        "opaqueCorePixels": 5796,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1e7432b4fb625ceee3b061c9d4a946f28a86520aabf5ca166d2dc6f562bde856",
+      "midpoint": {
+        "visiblePixels": 7060,
+        "opaqueCorePixels": 6052,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        2
+      ],
+      "target": [
+        8,
+        3
+      ],
+      "entry": "motion/r08/c02-r08-c03.mtn",
+      "bytes": 3412,
+      "sha256": "49f58bcde5540efca5179c184c693b96cc3ba23f0aa0e5884420bdd40c1c33f8",
+      "midpoint": {
+        "visiblePixels": 6776,
+        "opaqueCorePixels": 5878,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "cba30b0a57de79927454643ac936c0835f38076a59e09b479816ae26f71b5956",
+      "midpoint": {
+        "visiblePixels": 7316,
+        "opaqueCorePixels": 6365,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        3
+      ],
+      "target": [
+        8,
+        4
+      ],
+      "entry": "motion/r08/c03-r08-c04.mtn",
+      "bytes": 3412,
+      "sha256": "7d00a2ff442d7e22f40536dec3799e410d26b59bcce6a0738eb1f83869d7fa72",
+      "midpoint": {
+        "visiblePixels": 6921,
+        "opaqueCorePixels": 6095,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "89e442e3b1db415269343d873024fe1b6aee106a38fd596363d802fa36622f4e",
+      "midpoint": {
+        "visiblePixels": 7267,
+        "opaqueCorePixels": 6299,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        4
+      ],
+      "target": [
+        8,
+        5
+      ],
+      "entry": "motion/r08/c04-r08-c05.mtn",
+      "bytes": 3412,
+      "sha256": "f5be06ea18fc545a555c44beba815c46714eabe43ca8dee5ebe1d0b5aad8855a",
+      "midpoint": {
+        "visiblePixels": 7047,
+        "opaqueCorePixels": 6152,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r08/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2419061b409033ea9511ef544a12a63f345f2b6477187e8b239f8676987acd93",
+      "midpoint": {
+        "visiblePixels": 7260,
+        "opaqueCorePixels": 6303,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        8,
+        5
+      ],
+      "target": [
+        8,
+        0
+      ],
+      "entry": "motion/r08/c05-r08-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b0f4e608a9f847298492bbac81e394074edd6bf8d21cf392e4a7dc325252c15b",
+      "midpoint": {
+        "visiblePixels": 7257,
+        "opaqueCorePixels": 6445,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0d6bc889fd21719796073ea07333a97f27ddf7333efe4e1fd11ca44e8a1b50ea",
+      "midpoint": {
+        "visiblePixels": 7350,
+        "opaqueCorePixels": 6465,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        0
+      ],
+      "target": [
+        11,
+        1
+      ],
+      "entry": "motion/r11/c00-r11-c01.mtn",
+      "bytes": 3412,
+      "sha256": "430f592278e7f86c91690c87d1f03686378a291401a3c08ef66d30686417a216",
+      "midpoint": {
+        "visiblePixels": 6821,
+        "opaqueCorePixels": 6041,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ae114e94b1607f81a690b395402a8d6dd85be4e30452045760bd4dc3b1f1aaf8",
+      "midpoint": {
+        "visiblePixels": 7280,
+        "opaqueCorePixels": 6398,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        1
+      ],
+      "target": [
+        11,
+        2
+      ],
+      "entry": "motion/r11/c01-r11-c02.mtn",
+      "bytes": 3412,
+      "sha256": "13b222b2f0fb46b7b2b838ede51e3fcdfafe100fc1e98e380414128f4e5554a5",
+      "midpoint": {
+        "visiblePixels": 6868,
+        "opaqueCorePixels": 5953,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a6de25167618c5afbf7114174f0f2159f2416f4ce32621b014499dd72d0f40a8",
+      "midpoint": {
+        "visiblePixels": 7501,
+        "opaqueCorePixels": 6521,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        2
+      ],
+      "target": [
+        11,
+        3
+      ],
+      "entry": "motion/r11/c02-r11-c03.mtn",
+      "bytes": 3412,
+      "sha256": "4d729c6f05f361d29163448e6c4ea77f4e7d3d8d2ac5114eccc4f5ba87a0c7f3",
+      "midpoint": {
+        "visiblePixels": 6492,
+        "opaqueCorePixels": 5738,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "72366a3973be266b0c152741b8ffd3433932b181269f04579ffbe7a541fd8ae2",
+      "midpoint": {
+        "visiblePixels": 7231,
+        "opaqueCorePixels": 6289,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        3
+      ],
+      "target": [
+        11,
+        4
+      ],
+      "entry": "motion/r11/c03-r11-c04.mtn",
+      "bytes": 3412,
+      "sha256": "f0c389a25699a7a92dec84829015baebf77a7c105674ae514ffad36d7835fde4",
+      "midpoint": {
+        "visiblePixels": 6808,
+        "opaqueCorePixels": 5900,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e064417c1425a8fa0fac43c84f0c4522fdb6b9e4221a10de0811a351cbaa91e1",
+      "midpoint": {
+        "visiblePixels": 7286,
+        "opaqueCorePixels": 6420,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        4
+      ],
+      "target": [
+        11,
+        5
+      ],
+      "entry": "motion/r11/c04-r11-c05.mtn",
+      "bytes": 3412,
+      "sha256": "14308bd28fe4cfe6d63c3f42b0b9b1fc8f4f3708901fc013bfed171fd304e981",
+      "midpoint": {
+        "visiblePixels": 6919,
+        "opaqueCorePixels": 6119,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r11/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "62d72bf5b99cc080e69a0be2c0467fd88af4eaf5d2ae9e3e105170c54dedd0c8",
+      "midpoint": {
+        "visiblePixels": 7190,
+        "opaqueCorePixels": 6317,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        11,
+        5
+      ],
+      "target": [
+        11,
+        0
+      ],
+      "entry": "motion/r11/c05-r11-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ea7734e044705562c00a43e030d469e591421931c031dd3038d4f25507058241",
+      "midpoint": {
+        "visiblePixels": 6585,
+        "opaqueCorePixels": 5726,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ff9ffd3cb894441fd8ed7f83d52b7c5767a30c8c0c8a5e1243f8c1c860f7cc62",
+      "midpoint": {
+        "visiblePixels": 7323,
+        "opaqueCorePixels": 6324,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        0
+      ],
+      "target": [
+        12,
+        1
+      ],
+      "entry": "motion/r12/c00-r12-c01.mtn",
+      "bytes": 3412,
+      "sha256": "475fc3dfd91d9552eeb7d26a449b0eeb5fdf3a1b2d9e456e229b90e5d94c5f97",
+      "midpoint": {
+        "visiblePixels": 6834,
+        "opaqueCorePixels": 5970,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "905a312c336281cc939e0ec8088bbe5f19ffc117c38ce47da7261a51e2b87050",
+      "midpoint": {
+        "visiblePixels": 7244,
+        "opaqueCorePixels": 6367,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        1
+      ],
+      "target": [
+        12,
+        2
+      ],
+      "entry": "motion/r12/c01-r12-c02.mtn",
+      "bytes": 3412,
+      "sha256": "b1dd64589804af22895d8079b97f026b85d1aeb61e60973571b5dfba50b91315",
+      "midpoint": {
+        "visiblePixels": 6893,
+        "opaqueCorePixels": 6011,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "8250651c21d8857c26ce72d0650d46e5dbfd5400a4525d99c16ff266767fb672",
+      "midpoint": {
+        "visiblePixels": 7350,
+        "opaqueCorePixels": 6416,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        2
+      ],
+      "target": [
+        12,
+        3
+      ],
+      "entry": "motion/r12/c02-r12-c03.mtn",
+      "bytes": 3412,
+      "sha256": "75c68a541bb32b0868171da4acbfc1890344dcfe196d01faeb012d0f50dc65b7",
+      "midpoint": {
+        "visiblePixels": 6862,
+        "opaqueCorePixels": 6068,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "3e3bb13c73dfeb515d63679d313a7d6cce139c7563729b949aff549781a0fe4f",
+      "midpoint": {
+        "visiblePixels": 7226,
+        "opaqueCorePixels": 6343,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        3
+      ],
+      "target": [
+        12,
+        4
+      ],
+      "entry": "motion/r12/c03-r12-c04.mtn",
+      "bytes": 3412,
+      "sha256": "277e6a76033e428d3a51eecd747c800e2b36eaeaab68e18f20c21e522fbc14d0",
+      "midpoint": {
+        "visiblePixels": 7018,
+        "opaqueCorePixels": 6151,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7f2b475f2a67d7a3d9bfe7acbd90998a47f1cba6d9c810799400f9b3c368bc01",
+      "midpoint": {
+        "visiblePixels": 7310,
+        "opaqueCorePixels": 6387,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        4
+      ],
+      "target": [
+        12,
+        5
+      ],
+      "entry": "motion/r12/c04-r12-c05.mtn",
+      "bytes": 3412,
+      "sha256": "dbb52c10b28f1440e789e1e9f7b65ee8557da1cd1d41f7be54937625347a88a1",
+      "midpoint": {
+        "visiblePixels": 7000,
+        "opaqueCorePixels": 6155,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7dd1877a5e292f2c7c6c8f2471a3780db454e7da89960ded4727bfe9839f7376",
+      "midpoint": {
+        "visiblePixels": 7377,
+        "opaqueCorePixels": 6410,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        5
+      ],
+      "target": [
+        12,
+        6
+      ],
+      "entry": "motion/r12/c05-r12-c06.mtn",
+      "bytes": 3412,
+      "sha256": "4fa13fdb28ae27b7f069277187f35cc39dcbd17c566d53f8464460f3267547e1",
+      "midpoint": {
+        "visiblePixels": 6887,
+        "opaqueCorePixels": 6037,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "545f1ae12b586b131f867f53dfeedec096b0520b5a8691503d689eb16613cdf4",
+      "midpoint": {
+        "visiblePixels": 7265,
+        "opaqueCorePixels": 6342,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        6
+      ],
+      "target": [
+        12,
+        7
+      ],
+      "entry": "motion/r12/c06-r12-c07.mtn",
+      "bytes": 3412,
+      "sha256": "bca49578da92779ceb6575440d3a2ba5a947900783a82af39d1d74c1a9710b4c",
+      "midpoint": {
+        "visiblePixels": 7096,
+        "opaqueCorePixels": 6309,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r12/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "82d467e20619bfca59b6cdb3abd3adce4975e7d06e56e363209eb1c403d5852d",
+      "midpoint": {
+        "visiblePixels": 7271,
+        "opaqueCorePixels": 6352,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        12,
+        7
+      ],
+      "target": [
+        12,
+        0
+      ],
+      "entry": "motion/r12/c07-r12-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0f22535ea829a0927521a6aed9803d8580d7be36b96ff54d65d6c4014f345d6a",
+      "midpoint": {
+        "visiblePixels": 7299,
+        "opaqueCorePixels": 6387,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2e54ff20fb550eb5172fa111e2c09578775923cec759d35129e1dcafc164d7e3",
+      "midpoint": {
+        "visiblePixels": 7409,
+        "opaqueCorePixels": 6439,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        0
+      ],
+      "target": [
+        13,
+        1
+      ],
+      "entry": "motion/r13/c00-r13-c01.mtn",
+      "bytes": 3412,
+      "sha256": "3136fc44926845bb729bf106b4840819173c2908872f64a3dfa34754b0443598",
+      "midpoint": {
+        "visiblePixels": 7355,
+        "opaqueCorePixels": 6459,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ac75ec2b5e639686528cb792490b75b1168614cde69667a66ae0b6b97a680af2",
+      "midpoint": {
+        "visiblePixels": 7369,
+        "opaqueCorePixels": 6433,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        1
+      ],
+      "target": [
+        13,
+        2
+      ],
+      "entry": "motion/r13/c01-r13-c02.mtn",
+      "bytes": 3412,
+      "sha256": "5ec7a3b38f21f0c2aac9b1b142ca0df69f0830d4d794425f97d90cd209eb3a51",
+      "midpoint": {
+        "visiblePixels": 7393,
+        "opaqueCorePixels": 6454,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c66b66c8d6f6b4a864b350490746085bf466c1121c19cce5248205dcfe6a97e0",
+      "midpoint": {
+        "visiblePixels": 7425,
+        "opaqueCorePixels": 6415,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        2
+      ],
+      "target": [
+        13,
+        3
+      ],
+      "entry": "motion/r13/c02-r13-c03.mtn",
+      "bytes": 3412,
+      "sha256": "aaaf53dc88b8037db4699a7debfe5d2aeadb3b244bc9f353c0a3a9d0a9644657",
+      "midpoint": {
+        "visiblePixels": 7341,
+        "opaqueCorePixels": 6495,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "935767de9e15a365efaeb4c6376d7935ece8fe732ec6f7360e8e969a356d1416",
+      "midpoint": {
+        "visiblePixels": 7253,
+        "opaqueCorePixels": 6291,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        3
+      ],
+      "target": [
+        13,
+        4
+      ],
+      "entry": "motion/r13/c03-r13-c04.mtn",
+      "bytes": 3412,
+      "sha256": "f122720c9ed1108a5909d027c71a5441680c21222ce1e2528eb52952de7e5022",
+      "midpoint": {
+        "visiblePixels": 6961,
+        "opaqueCorePixels": 6190,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a944b105e5ecde8fef7242606ed699863efdaad9b2b6ca388fde743bded43d87",
+      "midpoint": {
+        "visiblePixels": 7293,
+        "opaqueCorePixels": 6367,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        4
+      ],
+      "target": [
+        13,
+        5
+      ],
+      "entry": "motion/r13/c04-r13-c05.mtn",
+      "bytes": 3412,
+      "sha256": "2c29287f7e00585acf4ad2c5fe15924afd0a16c24a56b02bdbcd0945c805e431",
+      "midpoint": {
+        "visiblePixels": 7176,
+        "opaqueCorePixels": 6238,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "eb05c9f78233290de4f6593ca35da61aa67de47ea942b38e05ced7afdb38a907",
+      "midpoint": {
+        "visiblePixels": 7253,
+        "opaqueCorePixels": 6345,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        5
+      ],
+      "target": [
+        13,
+        6
+      ],
+      "entry": "motion/r13/c05-r13-c06.mtn",
+      "bytes": 3412,
+      "sha256": "ce6fcda7ab7f66b5cd052e67ff4bdd4d1a4035ac4c5f6450346d52ce3b2e21e9",
+      "midpoint": {
+        "visiblePixels": 7105,
+        "opaqueCorePixels": 6265,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "417b5c2f814136ed9838997e6196e186378c7d641ce5b5dcb0c3f183ecd32d00",
+      "midpoint": {
+        "visiblePixels": 7312,
+        "opaqueCorePixels": 6400,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        6
+      ],
+      "target": [
+        13,
+        7
+      ],
+      "entry": "motion/r13/c06-r13-c07.mtn",
+      "bytes": 3412,
+      "sha256": "06a656b28cfc7ce772601e0a997b99e4f6ec81aff8887ff6fcd86cab52246f55",
+      "midpoint": {
+        "visiblePixels": 7167,
+        "opaqueCorePixels": 6383,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r13/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "95d22a98c1c447028c3eeee4f2027515781349677d7c724a97ede7d8bb06d7e0",
+      "midpoint": {
+        "visiblePixels": 7296,
+        "opaqueCorePixels": 6385,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        13,
+        7
+      ],
+      "target": [
+        13,
+        0
+      ],
+      "entry": "motion/r13/c07-r13-c00.mtn",
+      "bytes": 3412,
+      "sha256": "dc44cf1d8fa401d260a333ddbbe2e86dc1bbd494f8ff162027d49f29d0e02a0d",
+      "midpoint": {
+        "visiblePixels": 7225,
+        "opaqueCorePixels": 6370,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "292d8777196360990f587932fd85b8db88562fb52ef4078c8967e5090614d294",
+      "midpoint": {
+        "visiblePixels": 7382,
+        "opaqueCorePixels": 6408,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        0
+      ],
+      "target": [
+        14,
+        1
+      ],
+      "entry": "motion/r14/c00-r14-c01.mtn",
+      "bytes": 3412,
+      "sha256": "aa01bfb6dac53df1824a2865f32ca59f06248a7904f976caf423b690ce58733c",
+      "midpoint": {
+        "visiblePixels": 7022,
+        "opaqueCorePixels": 6259,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1290b057d7bcc5e87375ae2c0f9ab7e84d689a267979e659805a001555f49de0",
+      "midpoint": {
+        "visiblePixels": 7312,
+        "opaqueCorePixels": 6405,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        1
+      ],
+      "target": [
+        14,
+        2
+      ],
+      "entry": "motion/r14/c01-r14-c02.mtn",
+      "bytes": 3412,
+      "sha256": "3826ceda4da92cf21ffe2463a8f9ad08cb556ff78802a3ba3fd1ba51a2c858af",
+      "midpoint": {
+        "visiblePixels": 7069,
+        "opaqueCorePixels": 6246,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "fd3d347c5c192f7ed0a4aed65a8cfba182289ed9f4a43a3cf0c45d818d0d6981",
+      "midpoint": {
+        "visiblePixels": 7332,
+        "opaqueCorePixels": 6408,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        2
+      ],
+      "target": [
+        14,
+        3
+      ],
+      "entry": "motion/r14/c02-r14-c03.mtn",
+      "bytes": 3412,
+      "sha256": "0f42a7a40cdf48e58a3907ac24fad1e1b1ef7ae3323f7bd03876a5d63cb76d99",
+      "midpoint": {
+        "visiblePixels": 7117,
+        "opaqueCorePixels": 6414,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "af94cf817a192c72cef635e7238de604df95447a1f41b7b3d16eff445f4fc411",
+      "midpoint": {
+        "visiblePixels": 7188,
+        "opaqueCorePixels": 6255,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        3
+      ],
+      "target": [
+        14,
+        4
+      ],
+      "entry": "motion/r14/c03-r14-c04.mtn",
+      "bytes": 3412,
+      "sha256": "7992dc76cc94b6d48cdb9e06289f5caeed0680e83a0363fd27b95c1095cb93fb",
+      "midpoint": {
+        "visiblePixels": 6998,
+        "opaqueCorePixels": 6202,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "819d042955601cfbcfc7a119eab956c24dc4fd5e4d1043534ca5618f91584040",
+      "midpoint": {
+        "visiblePixels": 7148,
+        "opaqueCorePixels": 6217,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        4
+      ],
+      "target": [
+        14,
+        5
+      ],
+      "entry": "motion/r14/c04-r14-c05.mtn",
+      "bytes": 3412,
+      "sha256": "f46285b4f0c06f274a6d2bdb4dc19bc2e11e27a49647fed4fde019df8e1f4416",
+      "midpoint": {
+        "visiblePixels": 6913,
+        "opaqueCorePixels": 6083,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "da3ed5323795e51e7dd2b1eafe642a85716dda14ee48cd5024bb798a19266211",
+      "midpoint": {
+        "visiblePixels": 7112,
+        "opaqueCorePixels": 6158,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        5
+      ],
+      "target": [
+        14,
+        6
+      ],
+      "entry": "motion/r14/c05-r14-c06.mtn",
+      "bytes": 3412,
+      "sha256": "c79d58e25354708faf430dfb019c2aecdab7d4e91fd330953e1c84edf089aa24",
+      "midpoint": {
+        "visiblePixels": 6834,
+        "opaqueCorePixels": 6019,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c747e6854727f24bb02dfa22f5345a920b0fc97f9740cf34f380748b36eca6f8",
+      "midpoint": {
+        "visiblePixels": 7248,
+        "opaqueCorePixels": 6275,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        6
+      ],
+      "target": [
+        14,
+        7
+      ],
+      "entry": "motion/r14/c06-r14-c07.mtn",
+      "bytes": 3412,
+      "sha256": "80cdaabb202d56905fea45b8e614b047f173c643bb1fae213ff5e4bf5178c128",
+      "midpoint": {
+        "visiblePixels": 6987,
+        "opaqueCorePixels": 6235,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r14/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "88a220d646585381e1fc733d6da33136b04bd40a7962c6f067755098f739eda0",
+      "midpoint": {
+        "visiblePixels": 7137,
+        "opaqueCorePixels": 6143,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        14,
+        7
+      ],
+      "target": [
+        14,
+        0
+      ],
+      "entry": "motion/r14/c07-r14-c00.mtn",
+      "bytes": 3412,
+      "sha256": "48c4e0fd88a5e83ddfffaf6dd0fa3c7f7cf775257831f7cebedeea08fc5bdb62",
+      "midpoint": {
+        "visiblePixels": 6859,
+        "opaqueCorePixels": 6054,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "bd5d3eea1aafea857db66ef981fdf21294843780df3b9c8302739c0afe82f51e",
+      "midpoint": {
+        "visiblePixels": 7308,
+        "opaqueCorePixels": 6386,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        0
+      ],
+      "target": [
+        15,
+        1
+      ],
+      "entry": "motion/r15/c00-r15-c01.mtn",
+      "bytes": 3412,
+      "sha256": "b60bf3081e827d3ed4b90f757fc62c1f0a369d1487c1605d81b37a2a667d8419",
+      "midpoint": {
+        "visiblePixels": 6900,
+        "opaqueCorePixels": 5997,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "839c8dbbba96ae1b32fbaeb99ae490b7e0a247c3bedf497722a656858276a541",
+      "midpoint": {
+        "visiblePixels": 7277,
+        "opaqueCorePixels": 6411,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        1
+      ],
+      "target": [
+        15,
+        2
+      ],
+      "entry": "motion/r15/c01-r15-c02.mtn",
+      "bytes": 3412,
+      "sha256": "5ba1fedf57523f1907abacd44fa7d41cfd4ac03ea08ed098abf80208ede57cd6",
+      "midpoint": {
+        "visiblePixels": 6879,
+        "opaqueCorePixels": 6092,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "845cdb647a45f5e6f2fda603cce130732d81698da8c25eb2927ca1fd10158d78",
+      "midpoint": {
+        "visiblePixels": 7230,
+        "opaqueCorePixels": 6362,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        2
+      ],
+      "target": [
+        15,
+        3
+      ],
+      "entry": "motion/r15/c02-r15-c03.mtn",
+      "bytes": 3412,
+      "sha256": "d3f4f023146dbd8451127f6059aa6e506156750b7ed723cec936676c51493ade",
+      "midpoint": {
+        "visiblePixels": 6924,
+        "opaqueCorePixels": 6080,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4313ca647ace3ba5255099e196e8294207e884ce182893484f1df956abff4644",
+      "midpoint": {
+        "visiblePixels": 7259,
+        "opaqueCorePixels": 6413,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        3
+      ],
+      "target": [
+        15,
+        4
+      ],
+      "entry": "motion/r15/c03-r15-c04.mtn",
+      "bytes": 3412,
+      "sha256": "5c3185304cada95549392f16aebaaebb0078817e7c47864b3cead4e2b6160527",
+      "midpoint": {
+        "visiblePixels": 6688,
+        "opaqueCorePixels": 5884,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "83387dad576bfd507c8edb8e0e457693669d76e161610ea06e3f35726039c3c0",
+      "midpoint": {
+        "visiblePixels": 7103,
+        "opaqueCorePixels": 6186,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        4
+      ],
+      "target": [
+        15,
+        5
+      ],
+      "entry": "motion/r15/c04-r15-c05.mtn",
+      "bytes": 3412,
+      "sha256": "0b4f02589d30a6c4eb1ffe353ea8f5bad48b9faf69c4ae7c62c8f01b7d4539b9",
+      "midpoint": {
+        "visiblePixels": 6756,
+        "opaqueCorePixels": 5908,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "5325e58d886e36ecc3ff3ee7d3c01537efa73c43bcbca27abd520680dfc175c4",
+      "midpoint": {
+        "visiblePixels": 7271,
+        "opaqueCorePixels": 6372,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        5
+      ],
+      "target": [
+        15,
+        6
+      ],
+      "entry": "motion/r15/c05-r15-c06.mtn",
+      "bytes": 3412,
+      "sha256": "8aa2b65b1f3d9846a25c5c440b9b919a2f7de2f47dab8290e71833fea95890e6",
+      "midpoint": {
+        "visiblePixels": 6909,
+        "opaqueCorePixels": 5998,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "91304e7ccd34d9f7e85e53dbfcec6bb6d1a672cdd356ec5fb9c460193da30523",
+      "midpoint": {
+        "visiblePixels": 7250,
+        "opaqueCorePixels": 6338,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        6
+      ],
+      "target": [
+        15,
+        7
+      ],
+      "entry": "motion/r15/c06-r15-c07.mtn",
+      "bytes": 3412,
+      "sha256": "341e9a9719e9cbe18d8a4b23e00c79414680d0a7c6e5c226d61f64bfcf4a6c90",
+      "midpoint": {
+        "visiblePixels": 7153,
+        "opaqueCorePixels": 6251,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r15/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "bfbee9bc8104c21375a448b7c7cb42f73b6fd3965675bde2fe719857c3ad8784",
+      "midpoint": {
+        "visiblePixels": 7232,
+        "opaqueCorePixels": 6286,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        15,
+        7
+      ],
+      "target": [
+        15,
+        0
+      ],
+      "entry": "motion/r15/c07-r15-c00.mtn",
+      "bytes": 3412,
+      "sha256": "22538a5a46a7d50f072d22372a9f542e8fcda9851549bad93e448f506f373dff",
+      "midpoint": {
+        "visiblePixels": 7223,
+        "opaqueCorePixels": 6393,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "46fb8df824d136e99584222504273298c42f258755864bb370229a19db0262c5",
+      "midpoint": {
+        "visiblePixels": 7280,
+        "opaqueCorePixels": 6343,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        0
+      ],
+      "target": [
+        16,
+        1
+      ],
+      "entry": "motion/r16/c00-r16-c01.mtn",
+      "bytes": 3412,
+      "sha256": "b70bb422e93907523138eb481e4232cc8ca2e909dc0c036509bb73867fd61c57",
+      "midpoint": {
+        "visiblePixels": 7152,
+        "opaqueCorePixels": 6292,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c5346ffc5155c67bc4f98460965b73cba1c6ff5c584d19bc37b0cdd909e3861f",
+      "midpoint": {
+        "visiblePixels": 7323,
+        "opaqueCorePixels": 6369,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        1
+      ],
+      "target": [
+        16,
+        2
+      ],
+      "entry": "motion/r16/c01-r16-c02.mtn",
+      "bytes": 3412,
+      "sha256": "40fb87c1b177877515936f9cc11cfcaa4893529589dbcef69625dec73b33c22c",
+      "midpoint": {
+        "visiblePixels": 7197,
+        "opaqueCorePixels": 6346,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c5266cbb4fa71e9864c125f5ad464aab88d922dc14813f4ffce76dceb191096a",
+      "midpoint": {
+        "visiblePixels": 7294,
+        "opaqueCorePixels": 6395,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        2
+      ],
+      "target": [
+        16,
+        3
+      ],
+      "entry": "motion/r16/c02-r16-c03.mtn",
+      "bytes": 3412,
+      "sha256": "2eb7ad8d081225fc967316e74d0401b5197738e30ac3f909e373f0bfd52ac80a",
+      "midpoint": {
+        "visiblePixels": 7169,
+        "opaqueCorePixels": 6358,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "d51663d4374ae3a4ccd301017b9d826b4bb2b09d8e28807bda8404a52ee46799",
+      "midpoint": {
+        "visiblePixels": 7293,
+        "opaqueCorePixels": 6369,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        3
+      ],
+      "target": [
+        16,
+        4
+      ],
+      "entry": "motion/r16/c03-r16-c04.mtn",
+      "bytes": 3412,
+      "sha256": "ceece60db4dcb45a8f2887b48c3264b20dbb8e044dbdde4624ebba42282fe613",
+      "midpoint": {
+        "visiblePixels": 7146,
+        "opaqueCorePixels": 6345,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "88259398e88122e2d8016fe467b75e160bb82633f14d42fc39625d58fe9e8aa6",
+      "midpoint": {
+        "visiblePixels": 7237,
+        "opaqueCorePixels": 6361,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        4
+      ],
+      "target": [
+        16,
+        5
+      ],
+      "entry": "motion/r16/c04-r16-c05.mtn",
+      "bytes": 3412,
+      "sha256": "5d8e37c2f47acd43941fdeb21c4828f2e2b515c12761b0edda95db497375664e",
+      "midpoint": {
+        "visiblePixels": 7185,
+        "opaqueCorePixels": 6295,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "67bf664a60c0c85c5e8b61af42c0e20b8af09eb1a28212668c8b4b8e2aeea774",
+      "midpoint": {
+        "visiblePixels": 7292,
+        "opaqueCorePixels": 6330,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        5
+      ],
+      "target": [
+        16,
+        6
+      ],
+      "entry": "motion/r16/c05-r16-c06.mtn",
+      "bytes": 3412,
+      "sha256": "b52477be64165dd919c49070e99967df2680cfa2ea6f821cb8b16373c286663c",
+      "midpoint": {
+        "visiblePixels": 7171,
+        "opaqueCorePixels": 6400,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b77d693d3d30f8a706030f9eabc2a5c6004d44cabea8e41ca96068b8027ac1dd",
+      "midpoint": {
+        "visiblePixels": 7308,
+        "opaqueCorePixels": 6347,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        6
+      ],
+      "target": [
+        16,
+        7
+      ],
+      "entry": "motion/r16/c06-r16-c07.mtn",
+      "bytes": 3412,
+      "sha256": "5da843334ad4468230a1fee5d463abe894c72540885f6feb4e7c96835df0b4df",
+      "midpoint": {
+        "visiblePixels": 7186,
+        "opaqueCorePixels": 6403,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r16/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2e2a5935af4e9fc90bda9a2bfcf70689bab9a8c4aa73eb6abc9642fb13e552f0",
+      "midpoint": {
+        "visiblePixels": 7283,
+        "opaqueCorePixels": 6377,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        16,
+        7
+      ],
+      "target": [
+        16,
+        0
+      ],
+      "entry": "motion/r16/c07-r16-c00.mtn",
+      "bytes": 3412,
+      "sha256": "26c88eed414a1d7815d62180e91d600a60b28e985f0721292e0cca1388d38772",
+      "midpoint": {
+        "visiblePixels": 7171,
+        "opaqueCorePixels": 6285,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "cb62ed492158636f67f58bcd72ab1e5c51013bb0b2d1ea75e79dd3242416c02f",
+      "midpoint": {
+        "visiblePixels": 7457,
+        "opaqueCorePixels": 6481,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        0
+      ],
+      "target": [
+        17,
+        1
+      ],
+      "entry": "motion/r17/c00-r17-c01.mtn",
+      "bytes": 3412,
+      "sha256": "d19a14c19201dca8a5ab8b2d1622399647d4bedbeb8561f62033ac6ac5b80e87",
+      "midpoint": {
+        "visiblePixels": 7532,
+        "opaqueCorePixels": 6757,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "26a63bd146520e2c63cb7b3ba25e9fbc71db96cb288c16c53050e39919aa5ba5",
+      "midpoint": {
+        "visiblePixels": 7472,
+        "opaqueCorePixels": 6496,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        1
+      ],
+      "target": [
+        17,
+        2
+      ],
+      "entry": "motion/r17/c01-r17-c02.mtn",
+      "bytes": 3412,
+      "sha256": "c77669fb5777739aa03ab30c04cc7d9ab928afe0ffee679748321e29d588a7c8",
+      "midpoint": {
+        "visiblePixels": 7757,
+        "opaqueCorePixels": 6946,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "98c1253bbe6916418ecc2f293842dd97f4960cdb76b59c31b5f309c6ac4f95ef",
+      "midpoint": {
+        "visiblePixels": 7467,
+        "opaqueCorePixels": 6509,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        2
+      ],
+      "target": [
+        17,
+        3
+      ],
+      "entry": "motion/r17/c02-r17-c03.mtn",
+      "bytes": 3412,
+      "sha256": "29ca221c19685d37c62a4f82fc15e016dfb1c37d0c2dae81042b0fa66d2d9a51",
+      "midpoint": {
+        "visiblePixels": 7711,
+        "opaqueCorePixels": 6928,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1189538f415b430c4b71d70c4c56c9d5df1178adc582469bad282465309dd4e1",
+      "midpoint": {
+        "visiblePixels": 7352,
+        "opaqueCorePixels": 6371,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        3
+      ],
+      "target": [
+        17,
+        4
+      ],
+      "entry": "motion/r17/c03-r17-c04.mtn",
+      "bytes": 3412,
+      "sha256": "f366797028427f5f9993ac539f2b81833815934005320544c57746a09190ea7e",
+      "midpoint": {
+        "visiblePixels": 7404,
+        "opaqueCorePixels": 6590,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "66f9fa1ae9fb6bea4970b22e0d7cb9d0d0914b5b8e74e5a6bf1866740734533e",
+      "midpoint": {
+        "visiblePixels": 7462,
+        "opaqueCorePixels": 6492,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        4
+      ],
+      "target": [
+        17,
+        5
+      ],
+      "entry": "motion/r17/c04-r17-c05.mtn",
+      "bytes": 3412,
+      "sha256": "399cf141d06eb0862f9c3aacf01ffda4442ab4c7fa6c60af07fd2b320be2c109",
+      "midpoint": {
+        "visiblePixels": 7593,
+        "opaqueCorePixels": 6752,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "3b0323b1c0a9517d624d37db5ffb9123f00e9d87b1b37e109f4b5a8fd38e60d3",
+      "midpoint": {
+        "visiblePixels": 7470,
+        "opaqueCorePixels": 6482,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        5
+      ],
+      "target": [
+        17,
+        6
+      ],
+      "entry": "motion/r17/c05-r17-c06.mtn",
+      "bytes": 3412,
+      "sha256": "5ed557c56d615e88727bc6bb86cd4a3ec2d852183d32be2ba95d40ef49b0b53d",
+      "midpoint": {
+        "visiblePixels": 7675,
+        "opaqueCorePixels": 6817,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4360d26ee8716ce11e4808c4835490e15f99b7f9b6a555d77344acd035b8e635",
+      "midpoint": {
+        "visiblePixels": 7469,
+        "opaqueCorePixels": 6501,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        6
+      ],
+      "target": [
+        17,
+        7
+      ],
+      "entry": "motion/r17/c06-r17-c07.mtn",
+      "bytes": 3412,
+      "sha256": "f6386f369c103e9cf7402b142b47d4ca0d0dd392b3c49696206b7b7ec692ed3e",
+      "midpoint": {
+        "visiblePixels": 7642,
+        "opaqueCorePixels": 6790,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r17/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ea7c86fe63369a43ebfe6ef5f4fd494c07e85edb22befb8088e28f96e8142f70",
+      "midpoint": {
+        "visiblePixels": 7464,
+        "opaqueCorePixels": 6488,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        17,
+        7
+      ],
+      "target": [
+        17,
+        0
+      ],
+      "entry": "motion/r17/c07-r17-c00.mtn",
+      "bytes": 3412,
+      "sha256": "9ebf1accbb02d7f14cb244881c0aa2bcdfe6615419a6c71b0a9bb86a9fa70c42",
+      "midpoint": {
+        "visiblePixels": 7569,
+        "opaqueCorePixels": 6684,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "cad67565bc2134e9b11e10df1ea1f2386009ce9b2dca3e764a3980fcfda89f63",
+      "midpoint": {
+        "visiblePixels": 7389,
+        "opaqueCorePixels": 6510,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        0
+      ],
+      "target": [
+        18,
+        1
+      ],
+      "entry": "motion/r18/c00-r18-c01.mtn",
+      "bytes": 3412,
+      "sha256": "2ff9f39cdc91dd23931e1449c5de8f0cae15e2359b083c1ea88ebeade2d20398",
+      "midpoint": {
+        "visiblePixels": 7124,
+        "opaqueCorePixels": 6205,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "a8b96c13185121842cdd675bb2a587630f77417ae17ea7e17cf00be15750b8b8",
+      "midpoint": {
+        "visiblePixels": 7239,
+        "opaqueCorePixels": 6272,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        1
+      ],
+      "target": [
+        18,
+        2
+      ],
+      "entry": "motion/r18/c01-r18-c02.mtn",
+      "bytes": 3412,
+      "sha256": "943db020dcbd1c335fe9e0d01c84abd746b25f348b7803545b1b63a2958603f0",
+      "midpoint": {
+        "visiblePixels": 7002,
+        "opaqueCorePixels": 6102,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ebfe8bbfdad039f9f0267dd0bc6a3eb313b0b2ba4cef361c3e0e1a2e5b6b747f",
+      "midpoint": {
+        "visiblePixels": 7359,
+        "opaqueCorePixels": 6395,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        2
+      ],
+      "target": [
+        18,
+        3
+      ],
+      "entry": "motion/r18/c02-r18-c03.mtn",
+      "bytes": 3412,
+      "sha256": "853c373f845f76271dd8e1fe05ff51c387780a06af52d1b83ea1f5eb9424567e",
+      "midpoint": {
+        "visiblePixels": 7626,
+        "opaqueCorePixels": 6663,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "16f3e590f3bf8c503dcae4562ca0baf534d3460fd7fcdc54dd8f633a2672476a",
+      "midpoint": {
+        "visiblePixels": 7222,
+        "opaqueCorePixels": 6278,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        3
+      ],
+      "target": [
+        18,
+        4
+      ],
+      "entry": "motion/r18/c03-r18-c04.mtn",
+      "bytes": 3412,
+      "sha256": "0505a25fd0a03c80242896c758afdea4c8837fa66fd5fde75fb84f0bce887d3f",
+      "midpoint": {
+        "visiblePixels": 7050,
+        "opaqueCorePixels": 6169,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7a6aa157ce30608005a0fb2e2d4a77624d9c8f06a19e188cf8c2e2d9c4265809",
+      "midpoint": {
+        "visiblePixels": 7226,
+        "opaqueCorePixels": 6311,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        4
+      ],
+      "target": [
+        18,
+        5
+      ],
+      "entry": "motion/r18/c04-r18-c05.mtn",
+      "bytes": 3412,
+      "sha256": "5321bf79b7a49c1734ee781012c0ac980bca68de2e5725b86e8cea951b48451e",
+      "midpoint": {
+        "visiblePixels": 6784,
+        "opaqueCorePixels": 5891,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "7d829cdb6ef7ce33332caeab532726306bbc9d24cb65ee5285ef27dfd88bfbc1",
+      "midpoint": {
+        "visiblePixels": 7097,
+        "opaqueCorePixels": 6163,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        5
+      ],
+      "target": [
+        18,
+        6
+      ],
+      "entry": "motion/r18/c05-r18-c06.mtn",
+      "bytes": 3412,
+      "sha256": "f5969e0751c90d0f905ba47b45ae51f9532ff890e24ddd155c7d9a3dd5701dc5",
+      "midpoint": {
+        "visiblePixels": 7258,
+        "opaqueCorePixels": 6208,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "359485a23d6a7a5b37f2f7e60591d4eb6c426e18c403ab81878322d4a13cc0f7",
+      "midpoint": {
+        "visiblePixels": 7195,
+        "opaqueCorePixels": 6270,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        6
+      ],
+      "target": [
+        18,
+        7
+      ],
+      "entry": "motion/r18/c06-r18-c07.mtn",
+      "bytes": 3412,
+      "sha256": "fb8cf8d4c40a1874b2db10574104b3edc9668832be12855ed65fcad421137b7b",
+      "midpoint": {
+        "visiblePixels": 7327,
+        "opaqueCorePixels": 6495,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r18/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "d04347e5d34c679d1ab46620913b6e5f9996496128bbc9d4f8efcc227eb7c74a",
+      "midpoint": {
+        "visiblePixels": 7292,
+        "opaqueCorePixels": 6427,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        18,
+        7
+      ],
+      "target": [
+        18,
+        0
+      ],
+      "entry": "motion/r18/c07-r18-c00.mtn",
+      "bytes": 3412,
+      "sha256": "315b691d8b65b43b967719fa2a4797674476bf2819c3eee9991abbe9b67b8f69",
+      "midpoint": {
+        "visiblePixels": 7604,
+        "opaqueCorePixels": 6661,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4146549f64dc1d75221fd313a3fcf5f19192cbad933315c2c0fd67d45ce512bd",
+      "midpoint": {
+        "visiblePixels": 7157,
+        "opaqueCorePixels": 6192,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        0
+      ],
+      "target": [
+        19,
+        1
+      ],
+      "entry": "motion/r19/c00-r19-c01.mtn",
+      "bytes": 3412,
+      "sha256": "d3ae59f20039d23ab455871781024cdeb5a27c3e07d1255676f86dd0a60b17b6",
+      "midpoint": {
+        "visiblePixels": 7171,
+        "opaqueCorePixels": 6265,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e51070ac842cdd3fab8414980c7710825b87112c13f66f4fc5aa0f7dcfb92054",
+      "midpoint": {
+        "visiblePixels": 7321,
+        "opaqueCorePixels": 6432,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        1
+      ],
+      "target": [
+        19,
+        2
+      ],
+      "entry": "motion/r19/c01-r19-c02.mtn",
+      "bytes": 3412,
+      "sha256": "d67ff286dd79ddc69bec6a061ce1978bd4ade60d7b198686900527760aa6ca9f",
+      "midpoint": {
+        "visiblePixels": 7109,
+        "opaqueCorePixels": 6308,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e9acd37fcdcff684c423e3191d8267a968ca9bab35635d0bb8caa34f45880ee3",
+      "midpoint": {
+        "visiblePixels": 7277,
+        "opaqueCorePixels": 6338,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        2
+      ],
+      "target": [
+        19,
+        3
+      ],
+      "entry": "motion/r19/c02-r19-c03.mtn",
+      "bytes": 3412,
+      "sha256": "39a2df3861f22192dfd6ef1f1cc9882f7c136536c1c40db4800d2ec9688fbe34",
+      "midpoint": {
+        "visiblePixels": 7483,
+        "opaqueCorePixels": 6567,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1286818d4485bfeb1af339ece7e1e0b98ba3d4cc55a4b24622ee7adfb3c006d8",
+      "midpoint": {
+        "visiblePixels": 7215,
+        "opaqueCorePixels": 6319,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        3
+      ],
+      "target": [
+        19,
+        4
+      ],
+      "entry": "motion/r19/c03-r19-c04.mtn",
+      "bytes": 3412,
+      "sha256": "c9c44fdfdd396ec07313a9631a6fd10ae7fda51a44e5bde9669d5a35610dc3ca",
+      "midpoint": {
+        "visiblePixels": 6145,
+        "opaqueCorePixels": 5458,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "f7860423d4e12c9869f6bdd211cf9328088242470f1cba55178f6619dadb95b1",
+      "midpoint": {
+        "visiblePixels": 6766,
+        "opaqueCorePixels": 5865,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        4
+      ],
+      "target": [
+        19,
+        5
+      ],
+      "entry": "motion/r19/c04-r19-c05.mtn",
+      "bytes": 3412,
+      "sha256": "5ba01e5f8e52a5d809f0db30c724edebc7a49a157ba27d1594e2e2ccb8e1b35d",
+      "midpoint": {
+        "visiblePixels": 7092,
+        "opaqueCorePixels": 6143,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "85a49a9b966f4ad52beae3e7b79dae8ea3152d307799fe54aec53b386576cf53",
+      "midpoint": {
+        "visiblePixels": 7140,
+        "opaqueCorePixels": 6185,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        5
+      ],
+      "target": [
+        19,
+        6
+      ],
+      "entry": "motion/r19/c05-r19-c06.mtn",
+      "bytes": 3412,
+      "sha256": "81bfed1f688c1c338f4d305223735999c7f5d476264b23ff193a3b8725b40e6d",
+      "midpoint": {
+        "visiblePixels": 7079,
+        "opaqueCorePixels": 6217,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "28edc1409ff598f54b5d09f10c0264a943ee3b165bab3ef0774731f2e721f0b7",
+      "midpoint": {
+        "visiblePixels": 7059,
+        "opaqueCorePixels": 6112,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        6
+      ],
+      "target": [
+        19,
+        7
+      ],
+      "entry": "motion/r19/c06-r19-c07.mtn",
+      "bytes": 3412,
+      "sha256": "f6b89dc271e2c431b45d1742e8c57840b246287643f78c60b3c100ecfadf8aab",
+      "midpoint": {
+        "visiblePixels": 6947,
+        "opaqueCorePixels": 6056,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r19/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c34439241a7c153049af667767ce6cbe169fe15569c5fb425723e762098d8d9a",
+      "midpoint": {
+        "visiblePixels": 7272,
+        "opaqueCorePixels": 6455,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        19,
+        7
+      ],
+      "target": [
+        19,
+        0
+      ],
+      "entry": "motion/r19/c07-r19-c00.mtn",
+      "bytes": 3412,
+      "sha256": "ba4e1a93428ecc8e6582b7e4033391c1c6daaa3e78f17fdc6428365daee814aa",
+      "midpoint": {
+        "visiblePixels": 6910,
+        "opaqueCorePixels": 6045,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "afbd2f15977e4ef65905b5a938cd4596b24fdb3fedd695d7deac4e5aa9d8f52b",
+      "midpoint": {
+        "visiblePixels": 7003,
+        "opaqueCorePixels": 6086,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        0
+      ],
+      "target": [
+        20,
+        1
+      ],
+      "entry": "motion/r20/c00-r20-c01.mtn",
+      "bytes": 3412,
+      "sha256": "522bc2e7f0094c8047baffa7a6d9dbee2023d220de6093a74a8b515f0935c7bc",
+      "midpoint": {
+        "visiblePixels": 6925,
+        "opaqueCorePixels": 5884,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c238aafb415d88a7c0d8485878124f29326eb41101ee0cb758254388332be563",
+      "midpoint": {
+        "visiblePixels": 7078,
+        "opaqueCorePixels": 6153,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        1
+      ],
+      "target": [
+        20,
+        2
+      ],
+      "entry": "motion/r20/c01-r20-c02.mtn",
+      "bytes": 3412,
+      "sha256": "637aac24a474db5986c7173a3cf9a6e57946020990b83866b5c09d98296aafbb",
+      "midpoint": {
+        "visiblePixels": 5864,
+        "opaqueCorePixels": 5071,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "88b518411e1c8f0108ec39204462e351c9046d6e7010fe12a0db0148ffd75ff7",
+      "midpoint": {
+        "visiblePixels": 7108,
+        "opaqueCorePixels": 6193,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        2
+      ],
+      "target": [
+        20,
+        3
+      ],
+      "entry": "motion/r20/c02-r20-c03.mtn",
+      "bytes": 3412,
+      "sha256": "1ee693714938977f8116cd2a911275dc5ade4e087ceb5b5d226716bcea6f51db",
+      "midpoint": {
+        "visiblePixels": 5426,
+        "opaqueCorePixels": 4679,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "09ef0fd5ba3cf5405c1489dcf7a2ad851934cefe0f00b2d884e7dc423668d136",
+      "midpoint": {
+        "visiblePixels": 7084,
+        "opaqueCorePixels": 6140,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        3
+      ],
+      "target": [
+        20,
+        4
+      ],
+      "entry": "motion/r20/c03-r20-c04.mtn",
+      "bytes": 3412,
+      "sha256": "84a1d463f385a0e10a18fed5d551659df6ae9c270e4f2f89e1b977a1a6b1fd84",
+      "midpoint": {
+        "visiblePixels": 6167,
+        "opaqueCorePixels": 5324,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "53d776265983a4b37d5fc3dde1a0d5477f3510bf026810668da081b790f6e2cf",
+      "midpoint": {
+        "visiblePixels": 7239,
+        "opaqueCorePixels": 6290,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        4
+      ],
+      "target": [
+        20,
+        5
+      ],
+      "entry": "motion/r20/c04-r20-c05.mtn",
+      "bytes": 3412,
+      "sha256": "db7938d2c371ccc754b61147bef5acd583b06327fd8cf6191f0f0f0cd016410b",
+      "midpoint": {
+        "visiblePixels": 6068,
+        "opaqueCorePixels": 5243,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "76c4dcefc63b23be68b7cfce12b2c5feafb3136b962f80c97bc11ccc2da7d34b",
+      "midpoint": {
+        "visiblePixels": 6884,
+        "opaqueCorePixels": 5933,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        5
+      ],
+      "target": [
+        20,
+        6
+      ],
+      "entry": "motion/r20/c05-r20-c06.mtn",
+      "bytes": 3412,
+      "sha256": "67ad28fdcc7db352446d0deb3905bf0be24460f33c2f4aa3ed9ef7f01ae3795a",
+      "midpoint": {
+        "visiblePixels": 6020,
+        "opaqueCorePixels": 5146,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e9b27e376d865c0c6fb85437b9eb7d574fa92665b68c2b939f657e43fb2d3c4b",
+      "midpoint": {
+        "visiblePixels": 7172,
+        "opaqueCorePixels": 6264,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        6
+      ],
+      "target": [
+        20,
+        7
+      ],
+      "entry": "motion/r20/c06-r20-c07.mtn",
+      "bytes": 3412,
+      "sha256": "2b81e09200a060b39dcbd6e0be4319b05ab89c4f0b25696cf63a244fe2cc6c2d",
+      "midpoint": {
+        "visiblePixels": 6429,
+        "opaqueCorePixels": 5623,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r20/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2d02de5f33cbeeb6d8c5311eca817a7961502824bea5a1e8f90021f4fe5c0f93",
+      "midpoint": {
+        "visiblePixels": 7015,
+        "opaqueCorePixels": 6111,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        20,
+        7
+      ],
+      "target": [
+        20,
+        0
+      ],
+      "entry": "motion/r20/c07-r20-c00.mtn",
+      "bytes": 3412,
+      "sha256": "48c24c2a34eee32139b8e98e864bef5857137d086c0394e92a33a6de7d530c7d",
+      "midpoint": {
+        "visiblePixels": 6491,
+        "opaqueCorePixels": 5693,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "892505781a1358bad90d4574290639cb64216ae3528e8af7d308afa649e4115d",
+      "midpoint": {
+        "visiblePixels": 7334,
+        "opaqueCorePixels": 6425,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        0
+      ],
+      "target": [
+        21,
+        1
+      ],
+      "entry": "motion/r21/c00-r21-c01.mtn",
+      "bytes": 3412,
+      "sha256": "2ea1c55178241245ec1a2d433d256320d9125e6e5c9b3eb40f4e545b78ada03b",
+      "midpoint": {
+        "visiblePixels": 7573,
+        "opaqueCorePixels": 6576,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "931de265b4116c8b70840edd0d6d298b56354047f13ba49cea8d69c1b3898e91",
+      "midpoint": {
+        "visiblePixels": 7222,
+        "opaqueCorePixels": 6253,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        1
+      ],
+      "target": [
+        21,
+        2
+      ],
+      "entry": "motion/r21/c01-r21-c02.mtn",
+      "bytes": 3412,
+      "sha256": "d321d7671f7a22a698aa49c207c5739e6b96e8cea6995c17828d8c06e85a0548",
+      "midpoint": {
+        "visiblePixels": 7136,
+        "opaqueCorePixels": 6358,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "35d07709c3d1aca98a8a7d0699191b58451e56a8096937714165fd166678b795",
+      "midpoint": {
+        "visiblePixels": 7204,
+        "opaqueCorePixels": 6208,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        2
+      ],
+      "target": [
+        21,
+        3
+      ],
+      "entry": "motion/r21/c02-r21-c03.mtn",
+      "bytes": 3412,
+      "sha256": "baf9f701e8cc33adefcafbaedae8945ee9c7027269f31b9d70d2ece2d96908d2",
+      "midpoint": {
+        "visiblePixels": 7012,
+        "opaqueCorePixels": 6248,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "05824fcc1a6b0902be2ba9a1d508d1517730ce80b8555dc3ebf1aca2d7b5f015",
+      "midpoint": {
+        "visiblePixels": 7215,
+        "opaqueCorePixels": 6223,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        3
+      ],
+      "target": [
+        21,
+        4
+      ],
+      "entry": "motion/r21/c03-r21-c04.mtn",
+      "bytes": 3412,
+      "sha256": "0d95d714f0ac98405e4aa4382f8da359a8773a2f9667d9d1b5cca6cbecd43bab",
+      "midpoint": {
+        "visiblePixels": 7003,
+        "opaqueCorePixels": 6040,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "2e46f3596b7d0f1953510bd452a8641394b17bf1536c958603eb5f202e1eab3e",
+      "midpoint": {
+        "visiblePixels": 7192,
+        "opaqueCorePixels": 6346,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        4
+      ],
+      "target": [
+        21,
+        5
+      ],
+      "entry": "motion/r21/c04-r21-c05.mtn",
+      "bytes": 3412,
+      "sha256": "a13fe91d509f57ff477c0c8a3b27917256da165b29354a35c096f813ed1f18ef",
+      "midpoint": {
+        "visiblePixels": 7072,
+        "opaqueCorePixels": 6227,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "e84c89d612d163e3f680beab3ab70401a7ccd1b021db794a24efc8f42a30f9a5",
+      "midpoint": {
+        "visiblePixels": 7268,
+        "opaqueCorePixels": 6381,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        5
+      ],
+      "target": [
+        21,
+        6
+      ],
+      "entry": "motion/r21/c05-r21-c06.mtn",
+      "bytes": 3412,
+      "sha256": "79001fcb8bcba3a3a3bdd0540681791debc620233d313f65403220b2e75fc149",
+      "midpoint": {
+        "visiblePixels": 7382,
+        "opaqueCorePixels": 6434,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "0431b1d0e6ff5141bc6f096bbf72161de663be9f2e0af8e5f05f33bf218a3372",
+      "midpoint": {
+        "visiblePixels": 7013,
+        "opaqueCorePixels": 6127,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        6
+      ],
+      "target": [
+        21,
+        7
+      ],
+      "entry": "motion/r21/c06-r21-c07.mtn",
+      "bytes": 3412,
+      "sha256": "c0470ea38cd7e9b23187c1f28eb2716553fd8914b3d9ab88c58a8c7c29f19af9",
+      "midpoint": {
+        "visiblePixels": 6929,
+        "opaqueCorePixels": 6119,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r21/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "672051547933c686bb6735d2e51c04b6b969d639137bd7a3a0728262cfdb01bb",
+      "midpoint": {
+        "visiblePixels": 7254,
+        "opaqueCorePixels": 6328,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        21,
+        7
+      ],
+      "target": [
+        21,
+        0
+      ],
+      "entry": "motion/r21/c07-r21-c00.mtn",
+      "bytes": 3412,
+      "sha256": "f612b2639fc0f9eadef8847b285552295ecbe9512a45db49013e7d400934e65a",
+      "midpoint": {
+        "visiblePixels": 7273,
+        "opaqueCorePixels": 6510,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        0
+      ],
+      "target": [
+        22,
+        1
+      ],
+      "entry": "motion/r22/c00-r22-c01.mtn",
+      "bytes": 3412,
+      "sha256": "e77c2c5c6690a77e3d34ffd47b52250f8c3f4d52f9fba3547b6d904a5182b497",
+      "midpoint": {
+        "visiblePixels": 5824,
+        "opaqueCorePixels": 5113,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "4cb6ef1ffdb962d03b890546fc2dc17fa20163b0b4c3d0efd7f92fe5ebc24e1e",
+      "midpoint": {
+        "visiblePixels": 6791,
+        "opaqueCorePixels": 5916,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        1
+      ],
+      "target": [
+        22,
+        2
+      ],
+      "entry": "motion/r22/c01-r22-c02.mtn",
+      "bytes": 3412,
+      "sha256": "5e13bef4211c4d9c7a245b3a1cb47cbe769d3a6b1cc7529faadd09cc1f73575b",
+      "midpoint": {
+        "visiblePixels": 4942,
+        "opaqueCorePixels": 4421,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "1f4c3875071d55e862e10bc38b5ea73caa2b45f11dcc1068c2ef459afc0bcf4d",
+      "midpoint": {
+        "visiblePixels": 6529,
+        "opaqueCorePixels": 5568,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        2
+      ],
+      "target": [
+        22,
+        3
+      ],
+      "entry": "motion/r22/c02-r22-c03.mtn",
+      "bytes": 3412,
+      "sha256": "0fbf9aee336075a9ba8a9177e7eda0362d0b39eef2db682407aaa7f17ddca557",
+      "midpoint": {
+        "visiblePixels": 5072,
+        "opaqueCorePixels": 4650,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "c577856e78abd8d879ef712b477755bf56e1b2ced893ce9a33187329fd5b4102",
+      "midpoint": {
+        "visiblePixels": 6543,
+        "opaqueCorePixels": 5576,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        3
+      ],
+      "target": [
+        22,
+        4
+      ],
+      "entry": "motion/r22/c03-r22-c04.mtn",
+      "bytes": 3412,
+      "sha256": "73927d5fe2bf2c5c5a182419f4f6665a90fa9d877dcca61d46f8282db6af376f",
+      "midpoint": {
+        "visiblePixels": 4929,
+        "opaqueCorePixels": 4500,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        3
+      ],
+      "target": [
+        22,
+        6
+      ],
+      "entry": "motion/r22/c03-r22-c06.mtn",
+      "bytes": 3412,
+      "sha256": "5d7109fb998714e00b4e660ad297bf4520ae9750bba82d704c56742a33d4a4c7",
+      "midpoint": {
+        "visiblePixels": 5160,
+        "opaqueCorePixels": 4432,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "13a2cc6303b2a2ba35a991137da0eabfe4660cacc814775537fc70188c95535b",
+      "midpoint": {
+        "visiblePixels": 6528,
+        "opaqueCorePixels": 5594,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        4
+      ],
+      "target": [
+        22,
+        5
+      ],
+      "entry": "motion/r22/c04-r22-c05.mtn",
+      "bytes": 3412,
+      "sha256": "c3815950f96b43b855843ce276c03f8bb51ee6c6b554717795818b82b974ec63",
+      "midpoint": {
+        "visiblePixels": 4852,
+        "opaqueCorePixels": 4484,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "b0656777baba8caef18bbba373e510d16cd4a77ce223390ff583fa99751438fb",
+      "midpoint": {
+        "visiblePixels": 6513,
+        "opaqueCorePixels": 5571,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        5
+      ],
+      "target": [
+        22,
+        6
+      ],
+      "entry": "motion/r22/c05-r22-c06.mtn",
+      "bytes": 3412,
+      "sha256": "3f4b77bbc1b6f9c5fd84eba2fa40e678853ef3aa0ba7ca85a087cc4eddfa151d",
+      "midpoint": {
+        "visiblePixels": 5171,
+        "opaqueCorePixels": 4447,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "abf1eb9565d3d64ad7146376a9a7649199d0e6a1de7f9870060fb3319c082b97",
+      "midpoint": {
+        "visiblePixels": 6491,
+        "opaqueCorePixels": 5579,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        6
+      ],
+      "target": [
+        22,
+        7
+      ],
+      "entry": "motion/r22/c06-r22-c07.mtn",
+      "bytes": 3412,
+      "sha256": "abf1eb9565d3d64ad7146376a9a7649199d0e6a1de7f9870060fb3319c082b97",
+      "midpoint": {
+        "visiblePixels": 6491,
+        "opaqueCorePixels": 5579,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r22/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        22,
+        7
+      ],
+      "target": [
+        22,
+        0
+      ],
+      "entry": "motion/r22/c07-r22-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        0
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c00-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        0
+      ],
+      "target": [
+        23,
+        1
+      ],
+      "entry": "motion/r23/c00-r23-c01.mtn",
+      "bytes": 3412,
+      "sha256": "d88ead48e5ecb4e88d2607799255b6eae801528e26b0eb6a284ce33ade5e4f3a",
+      "midpoint": {
+        "visiblePixels": 6108,
+        "opaqueCorePixels": 5322,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        1
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c01-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "134bad633c90476236d2006f3ee345820c0ab6005d92530edb5ad8f98b534d83",
+      "midpoint": {
+        "visiblePixels": 6754,
+        "opaqueCorePixels": 5842,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        1
+      ],
+      "target": [
+        23,
+        2
+      ],
+      "entry": "motion/r23/c01-r23-c02.mtn",
+      "bytes": 3412,
+      "sha256": "35bc52020b454722e0c94914a0c14083cec303882c3b3e90e45db00528eedafa",
+      "midpoint": {
+        "visiblePixels": 5908,
+        "opaqueCorePixels": 5277,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c02-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "80989cee0f7e996c7676797addf4f83e93ce56ecaf278be458e93759cf2e097b",
+      "midpoint": {
+        "visiblePixels": 6565,
+        "opaqueCorePixels": 5620,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        2
+      ],
+      "target": [
+        23,
+        3
+      ],
+      "entry": "motion/r23/c02-r23-c03.mtn",
+      "bytes": 3412,
+      "sha256": "b6079a5553b5bafec96392cccabcab42007e0b81cc0beddd80a93a94672a27cf",
+      "midpoint": {
+        "visiblePixels": 3509,
+        "opaqueCorePixels": 3154,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        3
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c03-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "87d165218676437678d7620ebd0f20225fb02641812ab486fd1816cfb8958fbb",
+      "midpoint": {
+        "visiblePixels": 6367,
+        "opaqueCorePixels": 5503,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        3
+      ],
+      "target": [
+        23,
+        4
+      ],
+      "entry": "motion/r23/c03-r23-c04.mtn",
+      "bytes": 3412,
+      "sha256": "e9404b14403cbe3abdc6857175db5c31f3b57a5d083c91be4f682f0701272081",
+      "midpoint": {
+        "visiblePixels": 3657,
+        "opaqueCorePixels": 3253,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        4
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c04-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "21d17bec929338dedf7af27b169f000dd42e3ac76796c4e76104dba2255f5a67",
+      "midpoint": {
+        "visiblePixels": 6353,
+        "opaqueCorePixels": 5507,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        4
+      ],
+      "target": [
+        23,
+        5
+      ],
+      "entry": "motion/r23/c04-r23-c05.mtn",
+      "bytes": 3412,
+      "sha256": "f17ae22e4fea520b2fca330ff7b0f284067fa852dcb787bcb562571af040b2d9",
+      "midpoint": {
+        "visiblePixels": 3588,
+        "opaqueCorePixels": 3227,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        5
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c05-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "82096581d48dcdc78f2a564b0f28ee399376524308cbc474903812809044d062",
+      "midpoint": {
+        "visiblePixels": 6353,
+        "opaqueCorePixels": 5492,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        5
+      ],
+      "target": [
+        23,
+        6
+      ],
+      "entry": "motion/r23/c05-r23-c06.mtn",
+      "bytes": 3412,
+      "sha256": "96ed36cd480bfecfa4b9ad495dc18415d476eef70064255f83bc16b1cac84baf",
+      "midpoint": {
+        "visiblePixels": 4757,
+        "opaqueCorePixels": 4152,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        6
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c06-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "9d4e67a1f6b301262270ce9cf7c3389d8d4448c54faae8645b1469707f5e7f31",
+      "midpoint": {
+        "visiblePixels": 6745,
+        "opaqueCorePixels": 5769,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        6
+      ],
+      "target": [
+        23,
+        7
+      ],
+      "entry": "motion/r23/c06-r23-c07.mtn",
+      "bytes": 3412,
+      "sha256": "9d4e67a1f6b301262270ce9cf7c3389d8d4448c54faae8645b1469707f5e7f31",
+      "midpoint": {
+        "visiblePixels": 6745,
+        "opaqueCorePixels": 5769,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        7
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "entry": "motion/r23/c07-r00-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    },
+    {
+      "source": [
+        23,
+        7
+      ],
+      "target": [
+        23,
+        0
+      ],
+      "entry": "motion/r23/c07-r23-c00.mtn",
+      "bytes": 3412,
+      "sha256": "41926c51d78a1d978a135d2f98036f3e1a12bd2c92bb936786ffa2063f1d75c3",
+      "midpoint": {
+        "visiblePixels": 7164,
+        "opaqueCorePixels": 6483,
+        "largestComponentCoverage": 1.0,
+        "largeComponentCount": 1
+      }
+    }
+  ]
+}

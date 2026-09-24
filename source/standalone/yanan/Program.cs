@@ -583,6 +583,9 @@ namespace Yanan.Standalone
                 string.Empty,
                 true,
                 "整理衣领"));
+            packs.Add(new SkinPack(
+                "stage", "银曜舞台", "Anbunensi", string.Empty,
+                true, "整理舞台外套", "Yanan.Standalone.StageFrames.zip"));
 
             try
             {
@@ -1874,7 +1877,7 @@ namespace Yanan.Standalone
             long visiblePixels = 0;
             byte[] archiveBytes = null;
             int minimumVerifiedStages = int.MaxValue;
-            int sittingPhoneLoopStages = 4 * AnimationSmoothing.GetStepsPerTransition(4);
+            int sittingPhoneLoopStages = 0;
             int sittingEnterExitStages = 3 * AnimationSmoothing.GetStepsPerTransition(3);
             int sideRestSegmentStages = 4 * AnimationSmoothing.GetStepsPerTransition(4);
             int exclusiveSwingEnterStages = 2 * AnimationSmoothing.GetStepsPerTransition(2);
@@ -1908,7 +1911,7 @@ namespace Yanan.Standalone
                 && AnimationSmoothing.GetDisplayStageCount(6) == 24
                 && AnimationSmoothing.GetDisplayStageCount(5) == 25
                 && AnimationSmoothing.GetDisplayStageCount(4) == 24
-                && sittingPhoneLoopStages == 24
+                && sittingPhoneLoopStages == 0
                 && sittingEnterExitStages == 24
                 && sideRestSegmentStages == 24
                 && exclusiveSwingEnterStages == 24
@@ -2048,7 +2051,7 @@ namespace Yanan.Standalone
                 }
 
                 HashSet<string> expectedEmbeddedSkinIds = new HashSet<string>(
-                    new string[] { "noir" },
+                    new string[] { "noir", "stage" },
                     StringComparer.OrdinalIgnoreCase);
                 StringBuilder embeddedIdBuilder = new StringBuilder();
                 int expectedEmbeddedFrameCount = 0;
@@ -2094,23 +2097,16 @@ namespace Yanan.Standalone
                         (int)CharacterState.HandDance,
                         1,
                         out skinMotionField);
-                    using (Bitmap first = FrameResource.LoadSourceFrame(
-                        skinArchive, skin.EntryPrefix, (int)CharacterState.Idle, 0))
-                    using (Bitmap middle = FrameResource.LoadSourceFrame(
-                        skinArchive, skin.EntryPrefix, (int)CharacterState.HandDance, 0))
-                    using (Bitmap last = FrameResource.LoadSourceFrame(
-                        skinArchive, skin.EntryPrefix, FrameResource.Rows - 1, 0))
+                    for (int row = 0; row < FrameResource.Rows; row++)
                     {
-                        skinValid = skinValid
-                            && first.Width == FrameResource.SourceWidth
-                            && first.Height == FrameResource.SourceHeight
-                            && middle.Width == FrameResource.SourceWidth
-                            && middle.Height == FrameResource.SourceHeight
-                            && last.Width == FrameResource.SourceWidth
-                            && last.Height == FrameResource.SourceHeight
-                            && CountVisiblePixels(first) > 0
-                            && CountVisiblePixels(middle) > 0
-                            && CountVisiblePixels(last) > 0;
+                        for (int col = 0; col < FrameResource.UsedCellsPerRow[row]; col++)
+                        using (Bitmap frame = FrameResource.LoadSourceFrame(skinArchive, skin.EntryPrefix, row, col))
+                        {
+                            skinValid = skinValid
+                                && frame.Width == FrameResource.SourceWidth
+                                && frame.Height == FrameResource.SourceHeight
+                                && CountVisiblePixels(frame) > 0;
+                        }
                     }
                     if (skinValid)
                     {
@@ -2122,8 +2118,8 @@ namespace Yanan.Standalone
                     }
                 }
                 embeddedSkinIds = embeddedIdBuilder.ToString();
-                allEmbeddedSkinsValid = embeddedSkinCount == 1
-                    && validatedEmbeddedSkinCount == 1
+                allEmbeddedSkinsValid = embeddedSkinCount == 2
+                    && validatedEmbeddedSkinCount == 2
                     && expectedEmbeddedSkinIds.Count == 0;
                 if (!allEmbeddedSkinsValid)
                 {
@@ -2134,7 +2130,7 @@ namespace Yanan.Standalone
                     && CharacterForm.FrameCounts[(int)CharacterState.Sitting] > PersistentActionContract.SittingExitLastFrame
                     && PersistentActionContract.SittingEnterLastFrame == PersistentActionContract.SittingLoopFirstFrame
                     && PersistentActionContract.SittingLoopLastFrame > PersistentActionContract.SittingLoopFirstFrame
-                    && sittingPhoneLoopStages >= AnimationSmoothing.MinimumStagesPerCycle
+                    && sittingPhoneLoopStages == 0
                     && sittingEnterExitStages >= AnimationSmoothing.MinimumStagesPerCycle;
                 if (!sittingPhoneContractValid)
                 {
@@ -2991,8 +2987,8 @@ namespace Yanan.Standalone
             builder.AppendLine("  \"skinTransitionPreview\": \"" + EscapeJson(Path.GetFileName(skinTransitionPreviewPath)) + "\",");
             builder.AppendLine("  \"sittingPhonePersistentUntilClick\": " + (sittingPhoneContractValid ? "true" : "false") + ",");
             builder.AppendLine("  \"sittingPhoneEnterFrames\": \"0-3\",");
-            builder.AppendLine("  \"sittingPhoneLoopFrames\": \"3-4-5-4\",");
-            builder.AppendLine("  \"sittingPhoneStaticHold\": false,");
+            builder.AppendLine("  \"sittingPhoneLoopFrames\": \"3-held\",");
+            builder.AppendLine("  \"sittingPhoneStaticHold\": true,");
             builder.AppendLine("  \"sittingPhoneLoopDisplayStages\": " + sittingPhoneLoopStages + ",");
             builder.AppendLine("  \"sittingPhoneEnterExitDisplayStages\": " + sittingEnterExitStages + ",");
             builder.AppendLine("  \"sittingPhoneClickExitFrames\": \"6-7\",");
@@ -3360,8 +3356,6 @@ namespace Yanan.Standalone
         private int _sleepEffectTick;
         private bool _sittingPhoneHolding;
         private bool _sittingPhoneExiting;
-        private bool _sittingExitRequested;
-        private int _sittingLoopDirection;
         private bool _exclusiveSwingActive;
         private bool _exclusiveSwingHolding;
         private bool _exclusiveSwingExiting;
@@ -3470,20 +3464,6 @@ namespace Yanan.Standalone
                 BeginInvoke((MethodInvoker)delegate
                 {
                     RunInteractionQa();
-                    SkinPack qaTarget = null;
-                    foreach (SkinPack pack in _skinCatalog.Packs)
-                    {
-                        if (pack.IsEmbedded
-                            && !string.Equals(pack.Id, _currentSkin.Id, StringComparison.OrdinalIgnoreCase))
-                        {
-                            qaTarget = pack;
-                            break;
-                        }
-                    }
-                    if (qaTarget != null)
-                    {
-                        SwitchSkin(qaTarget);
-                    }
                 });
             }
 
@@ -5390,19 +5370,7 @@ namespace Yanan.Standalone
 
                 if (_sittingPhoneHolding)
                 {
-                    if (column <= PersistentActionContract.SittingLoopFirstFrame)
-                    {
-                        targetColumn = PersistentActionContract.SittingLoopFirstFrame + 1;
-                    }
-                    else if (column >= PersistentActionContract.SittingLoopLastFrame)
-                    {
-                        targetColumn = PersistentActionContract.SittingLoopLastFrame - 1;
-                    }
-                    else
-                    {
-                        targetColumn = column + (_sittingLoopDirection >= 0 ? 1 : -1);
-                    }
-                    return true;
+                    return false;
                 }
 
                 if (column < PersistentActionContract.SittingEnterLastFrame)
@@ -5607,6 +5575,17 @@ namespace Yanan.Standalone
                 return false;
             }
 
+            // User-requested still phone pose: retain one exact body and scale
+            // while seated, rather than morphing independently authored bodies.
+            if (_sittingPhoneHolding && !_sittingPhoneExiting)
+            {
+                _stateFrame = PersistentActionContract.SittingEnterLastFrame;
+                _tweenStep = 0;
+                _animationTimer.Interval = 120;
+                RenderCurrentFrame();
+                return true;
+            }
+
             int targetRow;
             int targetColumn;
             if (!TryGetTweenTarget((int)CharacterState.Sitting, _stateFrame, out targetRow, out targetColumn))
@@ -5639,30 +5618,7 @@ namespace Yanan.Standalone
                 && _stateFrame == PersistentActionContract.SittingEnterLastFrame)
             {
                 _sittingPhoneHolding = true;
-                _sittingLoopDirection = 1;
                 _remainingActionFrames = -1;
-            }
-            else if (_sittingPhoneHolding)
-            {
-                if (_stateFrame >= PersistentActionContract.SittingLoopLastFrame)
-                {
-                    _sittingLoopDirection = -1;
-                }
-                else if (_stateFrame <= PersistentActionContract.SittingLoopFirstFrame)
-                {
-                    _sittingLoopDirection = 1;
-                }
-
-                // A click during an in-between frame is deferred until this
-                // exact key boundary.  The displayed composite therefore
-                // never snaps backward to its interpolation source pose.
-                if (_sittingExitRequested)
-                {
-                    _sittingExitRequested = false;
-                    _sittingPhoneHolding = false;
-                    _sittingPhoneExiting = true;
-                    _remainingActionFrames = 3;
-                }
             }
 
             RenderCurrentFrame();
@@ -5674,24 +5630,27 @@ namespace Yanan.Standalone
         {
             if (_state != CharacterState.Sitting
                 || !_sittingPhoneHolding
-                || _sittingPhoneExiting
-                || _sittingExitRequested)
+                || _sittingPhoneExiting)
             {
                 return;
             }
 
-            _sittingExitRequested = true;
+            _sittingPhoneHolding = false;
+            _sittingPhoneExiting = true;
+            _stateFrame = PersistentActionContract.SittingEnterLastFrame;
+            _tweenStep = 0;
+            _longKeyFrameHoldConsumed = false;
+            _remainingActionFrames = 3;
             _movingToTarget = false;
             _pendingDoubleClickWave = false;
             _lookIndex = -1;
+            ScheduleCurrentTweenTick();
         }
 
         private void ResetSittingPhoneState()
         {
             _sittingPhoneHolding = false;
             _sittingPhoneExiting = false;
-            _sittingExitRequested = false;
-            _sittingLoopDirection = 1;
         }
 
         private Bitmap CreateSleepEffectFrame(Bitmap baseFrame, Rectangle visibleBounds)

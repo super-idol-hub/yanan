@@ -88,6 +88,7 @@ def expected_pairs(
             if row != 0:
                 pairs.add(((row, column), (0, 0)))
     pairs.add(((0, 5), (0, 0)))
+    pairs.add(((22, 3), (22, 6)))
     if include_exclusive_swing_exit:
         pairs.add(((15, 5), (15, 2)))
         pairs.add(((15, 2), (15, 6)))

@@ -22,4 +22,6 @@
 
 生成和转换工具仅在构建时使用 Python、Pillow、NumPy、OpenCV。`build_motion_fields.py` 从已审核关键帧计算网格，不生成新人物图。原始参考照片不参与运行时构建。
 
-`resources/noir-frames.zip` 已包含全部 PNG 和网格，直接编译不需要 Python。资源报告与逐行动作预览位于仓库 `qa/evidence/`。自动验证命令为 `./verify.ps1 -WindowQa`；它把 EXE 单独复制到隔离目录后执行，不依赖工作区图片。
+`resources/noir-frames.zip` 和 `resources/stage-frames.zip` 各包含 176 张 PNG 和 315 组网格，直接编译不需要 Python。资源报告与逐行动作预览位于仓库 `qa/evidence/`。自动验证命令为 `./verify.ps1 -WindowQa`；它把 EXE 单独复制到隔离目录后执行，不依赖工作区图片，并逐套检查皮肤切换和手机保持姿势的像素一致性。
+
+按用户反馈，手机停留改为固定 `r22/c03`，停止 `c03–c05` 循环和插值；点击通过专用 `c03→c06` 网格进入起身。保留 c04/c05 资源以兼容 176 帧协议。待机与凝视统一画布高度和脚底，手机、睡眠的站立端点复用同皮肤中性站姿，坐姿不放大填满画布。

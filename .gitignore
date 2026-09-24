@@ -6,6 +6,7 @@ obj/
 __pycache__/
 release-assets/
 source/standalone/yanan/resources/noir/
+source/standalone/yanan/resources/stage/
 *.pyc
 *.exe
 *.dll

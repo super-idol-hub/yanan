@@ -17,6 +17,8 @@ if (-not $SourceOnly) {
     if (-not $FrameArchive) { $FrameArchive = Join-Path $PSScriptRoot 'resources\noir-frames.zip' }
     $archive = (Resolve-Path -LiteralPath $FrameArchive).Path
     $arguments += "/resource:$archive,Yanan.Standalone.Frames.zip"
+    $stageArchive = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot 'resources\stage-frames.zip')).Path
+    $arguments += "/resource:$stageArchive,Yanan.Standalone.StageFrames.zip"
 }
 if (Test-Path -LiteralPath "$PSScriptRoot\yanan.ico") { $arguments += "/win32icon:$PSScriptRoot\yanan.ico" }
 $arguments += "$PSScriptRoot\Program.cs", "$PSScriptRoot\ContractTests.cs", "$PSScriptRoot\InteractionQa.cs"

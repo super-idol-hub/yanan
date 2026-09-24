@@ -9,6 +9,7 @@ namespace Yanan.Standalone
     internal sealed partial class CharacterForm
     {
         private string _qaSnapshotName;
+        private string _qaLastDigest;
 
         private void QaTraceScale(string step)
         {
@@ -30,10 +31,18 @@ namespace Yanan.Standalone
         private void QaSaveRenderedFrame(Bitmap bitmap)
         {
             string directory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
-            if (!_qaMode || _qaSnapshotName == null || string.IsNullOrEmpty(directory)) return;
-            directory = Path.Combine(directory, "rendered-frames");
-            Directory.CreateDirectory(directory);
-            bitmap.Save(Path.Combine(directory, _qaSnapshotName + ".png"), System.Drawing.Imaging.ImageFormat.Png);
+            if (!_qaMode || _qaSnapshotName == null) return;
+            using (var bytes = new MemoryStream())
+            {
+                bitmap.Save(bytes, System.Drawing.Imaging.ImageFormat.Png);
+                byte[] png = bytes.ToArray();
+                using (var hash = System.Security.Cryptography.SHA256.Create())
+                    _qaLastDigest = Convert.ToBase64String(hash.ComputeHash(png));
+                if (string.IsNullOrEmpty(directory)) return;
+                directory = Path.Combine(directory, "rendered-frames");
+                Directory.CreateDirectory(directory);
+                File.WriteAllBytes(Path.Combine(directory, _currentSkin.Id + "-" + _qaSnapshotName + ".png"), png);
+            }
         }
 
         private static void Require(bool condition, string label)
@@ -49,9 +58,34 @@ namespace Yanan.Standalone
 
         private void RunInteractionQa()
         {
+            string previousIdleDigest = null;
+            int testedSkins = 0;
+            foreach (SkinPack skin in _skinCatalog.Packs)
+            {
+                if (!skin.IsEmbedded) continue;
+                SwitchSkin(skin);
+                QaAdvanceUntil(delegate { return !_skinTransitionActive; }, "skin transition completes");
+                Require(_currentSkin.Id == skin.Id, "skin cache swaps to requested skin");
+                QaCapture("idle");
+                Require(previousIdleDigest == null || previousIdleDigest != _qaLastDigest, "skins have different rendered outfits");
+                previousIdleDigest = _qaLastDigest;
+                RunCurrentSkinInteractionQa();
+                testedSkins++;
+            }
+            Require(testedSkins == 2, "both embedded skins tested");
+            string directory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
+            if (!string.IsNullOrEmpty(directory))
+            {
+                Directory.CreateDirectory(directory);
+                File.WriteAllText(Path.Combine(directory, "interaction-qa.json"),
+                    "{\"ok\":true,\"scope\":\"real-window-automated-interactions\",\"testedSkins\":[\"noir\",\"stage\"],\"phoneHoldPixelStable\":true,\"manualAcceptance\":false,\"errors\":[]}", new UTF8Encoding(false));
+            }
+        }
+
+        private void RunCurrentSkinInteractionQa()
+        {
             _animationTimer.Stop();
             _behaviorTimer.Stop();
-            QaCapture("idle-noir");
             var down = new MouseEventArgs(MouseButtons.Left, 1, 40, 60, 0);
             OnMouseDown(down);
             OnMouseUp(down);
@@ -87,12 +121,15 @@ namespace Yanan.Standalone
             StartAction(CharacterState.Sitting, 1);
             OnMouseDown(down);
             Require(!_dragging && _state == CharacterState.Sitting, "phone entry consumes input");
-            QaAdvanceUntil(delegate { return _sittingPhoneHolding; }, "phone enters loop");
+            QaAdvanceUntil(delegate { return _sittingPhoneHolding; }, "phone reaches static hold");
             QaCapture("phone-holding");
+            string phoneDigest = _qaLastDigest;
             StartAction(CharacterState.Waving, 1);
             Require(_state == CharacterState.Sitting, "menu cannot interrupt phone");
             for (int i = 0; i < 60; i++) OnAnimationTick(this, EventArgs.Empty);
-            Require(_state == CharacterState.Sitting && _stateFrame >= 3 && _stateFrame <= 5, "phone persists");
+            Require(_state == CharacterState.Sitting && _stateFrame == 3 && _tweenStep == 0, "phone holds one registered pose");
+            QaCapture("phone-holding-after-60-ticks");
+            Require(phoneDigest != null && phoneDigest == _qaLastDigest, "phone body must remain pixel-identical while holding");
             OnMouseDown(down);
             QaAdvanceUntil(delegate { return _state == CharacterState.Idle; }, "phone click exits to idle");
 
@@ -126,13 +163,6 @@ namespace Yanan.Standalone
             Require(!_animationTimer.Enabled && !_behaviorTimer.Enabled, "pause stops timers");
             SetPaused(false);
             Require(_animationTimer.Enabled && _behaviorTimer.Enabled, "continue resumes timers");
-            string directory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
-            if (!string.IsNullOrEmpty(directory))
-            {
-                Directory.CreateDirectory(directory);
-                File.WriteAllText(Path.Combine(directory, "interaction-qa.json"),
-                    "{\"ok\":true,\"scope\":\"real-window-automated-interactions\",\"manualAcceptance\":false,\"errors\":[]}", new UTF8Encoding(false));
-            }
         }
     }
 }

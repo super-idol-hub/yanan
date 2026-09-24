@@ -2,15 +2,45 @@
   "schemaVersion": 1,
   "id": "yanan",
   "status": "candidate-awaiting-manual-acceptance",
-  "product": {"displayName": "颜安", "idol": "颜安", "developer": "Anbunensi", "targetVersion": "1.0.0"},
+  "product": {
+    "displayName": "颜安",
+    "idol": "颜安",
+    "developer": "Anbunensi",
+    "targetVersion": "1.0.0"
+  },
   "identityAnchorApproved": true,
-  "officialSkins": [{"id": "noir", "name": "黑白日常", "framesRequired": 176, "rowsRequired": 24, "resource": "Yanan.Standalone.Frames.zip"}],
-  "frameSize": [528, 808],
+  "officialSkins": [
+    {
+      "id": "noir",
+      "name": "黑白日常",
+      "framesRequired": 176,
+      "rowsRequired": 24,
+      "resource": "Yanan.Standalone.Frames.zip"
+    },
+    {
+      "id": "stage",
+      "name": "银曜舞台",
+      "framesRequired": 176,
+      "rowsRequired": 24,
+      "resource": "Yanan.Standalone.StageFrames.zip"
+    }
+  ],
+  "phoneHold": "fixed r22/c03; eyes on phone; no looping morph",
+  "frameSize": [
+    528,
+    808
+  ],
   "singleExecutable": true,
   "networkAccess": false,
   "autoStartupDefault": false,
   "releaseReady": false,
-  "testedSourceCommit": "64f7c34a141131072ef99965f7a45aec3896da00",
-  "ciRun": "https://github.com/super-idol-hub/yanan/actions/runs/35840955207",
-  "qa": {"sourceCompilation": "passed", "assets": "passed", "runtime": "passed", "automatedWindowInteractions": "passed", "cleanWindowsManualAcceptance": "pending"}
+  "testedSourceCommit": null,
+  "ciRun": null,
+  "qa": {
+    "sourceCompilation": "passed",
+    "assets": "passed",
+    "runtime": "pending",
+    "automatedWindowInteractions": "pending",
+    "cleanWindowsManualAcceptance": "pending"
+  }
 }
