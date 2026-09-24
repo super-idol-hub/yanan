@@ -72,13 +72,13 @@ namespace Yanan.Standalone
                 RunCurrentSkinInteractionQa();
                 testedSkins++;
             }
-            Require(testedSkins == 2, "both embedded skins tested");
+            Require(testedSkins == 3, "all three embedded skins tested");
             string directory = Environment.GetEnvironmentVariable("YANAN_QA_OUTPUT");
             if (!string.IsNullOrEmpty(directory))
             {
                 Directory.CreateDirectory(directory);
                 File.WriteAllText(Path.Combine(directory, "interaction-qa.json"),
-                    "{\"ok\":true,\"scope\":\"real-window-automated-interactions\",\"testedSkins\":[\"noir\",\"stage\"],\"phoneHoldPixelStable\":true,\"manualAcceptance\":false,\"errors\":[]}", new UTF8Encoding(false));
+                    "{\"ok\":true,\"scope\":\"real-window-automated-interactions\",\"testedSkins\":[\"noir\",\"stage\",\"crimson\"],\"phoneHoldPixelStable\":true,\"manualAcceptance\":false,\"errors\":[]}", new UTF8Encoding(false));
             }
         }
 

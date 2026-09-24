@@ -23,6 +23,13 @@
       "framesRequired": 176,
       "rowsRequired": 24,
       "resource": "Yanan.Standalone.StageFrames.zip"
+    },
+    {
+      "id": "crimson",
+      "name": "绯红舞台",
+      "framesRequired": 176,
+      "rowsRequired": 24,
+      "resource": "Yanan.Standalone.CrimsonFrames.zip"
     }
   ],
   "phoneHold": "fixed r22/c03; eyes on phone; no looping morph",
@@ -34,13 +41,14 @@
   "networkAccess": false,
   "autoStartupDefault": false,
   "releaseReady": false,
-  "testedSourceCommit": "f697917b3ad13e101282e2d82fdc5cd56e92bde2",
-  "ciRun": "https://github.com/super-idol-hub/yanan/actions/runs/35946380538",
+  "testedSourceCommit": null,
+  "ciRun": null,
   "qa": {
     "sourceCompilation": "passed",
     "assets": "passed",
-    "runtime": "passed",
-    "automatedWindowInteractions": "passed",
+    "runtime": "pending",
+    "automatedWindowInteractions": "pending",
     "cleanWindowsManualAcceptance": "pending"
-  }
+  },
+  "identityReference": "User-selected photograph 1, applied to all three skins with explicit user confirmation; photographic realism revision."
 }

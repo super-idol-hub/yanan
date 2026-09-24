@@ -586,6 +586,9 @@ namespace Yanan.Standalone
             packs.Add(new SkinPack(
                 "stage", "银曜舞台", "Anbunensi", string.Empty,
                 true, "整理舞台外套", "Yanan.Standalone.StageFrames.zip"));
+            packs.Add(new SkinPack(
+                "crimson", "绯红舞台", "Anbunensi", string.Empty,
+                true, "整理舞台外套", "Yanan.Standalone.CrimsonFrames.zip"));
 
             try
             {
@@ -2051,7 +2054,7 @@ namespace Yanan.Standalone
                 }
 
                 HashSet<string> expectedEmbeddedSkinIds = new HashSet<string>(
-                    new string[] { "noir", "stage" },
+                    new string[] { "noir", "stage", "crimson" },
                     StringComparer.OrdinalIgnoreCase);
                 StringBuilder embeddedIdBuilder = new StringBuilder();
                 int expectedEmbeddedFrameCount = 0;
@@ -2118,8 +2121,8 @@ namespace Yanan.Standalone
                     }
                 }
                 embeddedSkinIds = embeddedIdBuilder.ToString();
-                allEmbeddedSkinsValid = embeddedSkinCount == 2
-                    && validatedEmbeddedSkinCount == 2
+                allEmbeddedSkinsValid = embeddedSkinCount == 3
+                    && validatedEmbeddedSkinCount == 3
                     && expectedEmbeddedSkinIds.Count == 0;
                 if (!allEmbeddedSkinsValid)
                 {

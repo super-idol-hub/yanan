@@ -7,6 +7,7 @@ __pycache__/
 release-assets/
 source/standalone/yanan/resources/noir/
 source/standalone/yanan/resources/stage/
+source/standalone/yanan/resources/crimson/
 *.pyc
 *.exe
 *.dll

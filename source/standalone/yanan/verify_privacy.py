@@ -21,7 +21,7 @@ for name in filter(None, files):
     if re.search(r'(^|/)(references|sheets|work)/', name) or path.suffix.lower() in {'.exe','.dll','.mp3','.mp4','.wav'}:
         errors.append(name + ': forbidden source artifact')
 embedded_entries = {}
-for skin in ('noir', 'stage'):
+for skin in ('noir', 'stage', 'crimson'):
     with zipfile.ZipFile(root/f'source/standalone/yanan/resources/{skin}-frames.zip') as archive:
         names = archive.namelist()
         embedded_entries[skin] = len(names)
